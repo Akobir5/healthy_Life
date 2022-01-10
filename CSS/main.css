@@ -11,9 +11,91 @@
 }
 
 .headerMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
     width: 100vw;
-    height: 88vh;
-    background-image: url(../IMG/healthy_Header.jpg);
+    height: 100vh;
+    background-image: url(../IMG/clinic.jpg);
     background-size: cover;
+    color: #fff;
+}
+
+.headerMain::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(6, 3, 161, 0.452);
+}
+
+.clinic_Middle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.clinic_Middle h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(231, 231, 231);
+}
+
+.clinic_Envelope {
+    position: relative;
+    margin: 35px 0;
+    padding: 15px 40px;
+}
+
+.clinic_Envelope img {
+    width: 550px;
+}
+
+.clinic_Envelope h3 {
+    position: absolute;
+    top: 80px;
+    left: 145px;
+}
+
+
+.search_Form {
+    width: 600px;
+    margin-top: 100px;
+    padding: 15px 30px;
+    border: 2px solid red;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+.search_Form input {
+    width: 100%;
+    font-size: 22px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.search_Form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+.search_Form button img {
+    width: 30px;
 }
