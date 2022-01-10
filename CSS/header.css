@@ -1,0 +1,55 @@
+
+header {
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 25px 0 10px;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    position: relative;
+}
+
+.logo h1 {
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+
+.logo h2 {
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    position: absolute;
+    top: 30px;
+    right: -90px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.searchBtn, .accauntBtn {
+    padding: 15px 30px;
+}
