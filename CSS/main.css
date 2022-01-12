@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     position: relative;
     width: 100vw;
-    height: 90vh;
+    height: 87vh;
     background-image: url(../IMG/clinic.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -42,11 +42,11 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: -40px;
+    margin-bottom: 30px;
 }
 
 .clinic_Middle h2 {
-    margin-top: -100px;
     font-size: 40px;
     font-weight: bold;
     color: rgb(231, 231, 231);
@@ -91,7 +91,7 @@ body {
 
 .search_Form {
     width: 600px;
-    margin-top: 100px;
+    margin-top: 0 40px;
     padding: 0 20px;
     border: 2px solid rgba(70, 4, 223, 0.685);
     position: relative;
@@ -104,7 +104,6 @@ body {
     -ms-border-radius: 35px;
     -o-border-radius: 35px;
 
-    margin-bottom: 80px;
 }
 
 .search_Form input {
@@ -141,8 +140,8 @@ body {
     align-items: center;
     justify-content: space-between;
     font-size: 23px;
-    margin-top: 100px;
     cursor: pointer;
+    margin-top: 100px;
 }
 
 .certificate:hover {
@@ -164,7 +163,7 @@ body {
     width: 100%;
     padding: 50px 0;
     box-shadow: 0 0 30px rgb(204, 204, 204);
-    margin-top: -100px;
+    margin-top: -75px;
     z-index: 50;
     background-color: #fff;
     border-radius: 10px;
@@ -174,4 +173,7 @@ body {
     -o-border-radius: 10px;
 }
 
-
+.card {
+    height: 300px;
+    min-width: 400px;
+}
