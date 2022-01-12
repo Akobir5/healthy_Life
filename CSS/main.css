@@ -45,20 +45,39 @@
     color: rgb(231, 231, 231);
 }
 
+.contentSpan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .clinic_Envelope {
     position: relative;
     margin: 35px 0;
-    padding: 15px 40px;
+    padding: 17px 45px;
+    background-color: rgba(70, 4, 223, 0.685);
+    /* border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* 
 .clinic_Envelope img {
     width: 550px;
-}
+} */
 
 .clinic_Envelope h3 {
-    position: absolute;
+    /* position: absolute;
     top: 80px;
-    left: 145px;
+    left: 145px; */
+    margin: 0;
+}
+
+.degree {
+    color: rgba(70, 4, 223, 0.685);
+    font-size: 100px;
 }
 
 
