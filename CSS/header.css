@@ -14,6 +14,15 @@ header .container {
     justify-content: space-between;
 }
 
+.logoLink {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logoLink:hover {
+    color: #fff;
+}
+
 .logo {
     width: 100px;
     position: relative;
@@ -30,10 +39,6 @@ header .container {
     position: absolute;
     top: 30px;
     right: -90px;
-}
-
-.logo img {
-    width: 100%;
 }
 
 nav ul {

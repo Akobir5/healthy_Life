@@ -37,9 +37,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 200px;
 }
 
 .clinic_Middle h2 {
+    margin-top: -100px;
     font-size: 40px;
     font-weight: bold;
     color: rgb(231, 231, 231);
@@ -49,6 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .clinic_Envelope {
@@ -84,8 +87,8 @@
 .search_Form {
     width: 600px;
     margin-top: 100px;
-    padding: 15px 30px;
-    border: 2px solid red;
+    padding: 0 20px;
+    border: 2px solid rgba(70, 4, 223, 0.685);
     position: relative;
     display: flex;
     align-items: center;
@@ -95,6 +98,8 @@
     -moz-border-radius: 35px;
     -ms-border-radius: 35px;
     -o-border-radius: 35px;
+
+    margin-bottom: 80px;
 }
 
 .search_Form input {
@@ -105,16 +110,42 @@
     color: #fff;
 }
 
+.searchButton::placeholder {
+    color: rgb(212, 211, 211);
+}
+
 .search_Form button {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 50px;
+    width: 20px;
     background-color: transparent;
     border: none;
 }
 
-.search_Form button img {
-    width: 30px;
+.search_Form button i {
+    font-size: 35px;
+    color: rgb(233, 233, 233);
+    font-weight: 400;
 }
+
+.certificate {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 23px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.certificate:hover {
+    text-decoration: underline 2px solid #fff;
+}
+
+.certificate img {
+    width: 50px;
+}
+
+
