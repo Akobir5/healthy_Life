@@ -1,3 +1,7 @@
+:root{
+    --colored:red;
+}
+
 
 header {
     width: 100%;
@@ -26,6 +30,7 @@ header .container {
 .logo {
     width: 100px;
     position: relative;
+    
 }
 
 .logo h1 {

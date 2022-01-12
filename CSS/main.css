@@ -6,8 +6,12 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .container {
-    width: 1145px;
+    width: 1170px;
 }
 
 .headerMain {
@@ -17,9 +21,10 @@
     flex-direction: column;
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     background-image: url(../IMG/clinic.jpg);
     background-size: cover;
+    background-attachment: fixed;
     color: #fff;
 }
 
@@ -146,6 +151,27 @@
 
 .certificate img {
     width: 50px;
+}
+
+.sectionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.section {
+    width: 100%;
+    padding: 50px 0;
+    box-shadow: 0 0 30px rgb(204, 204, 204);
+    margin-top: -100px;
+    z-index: 50;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 
