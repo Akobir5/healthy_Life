@@ -176,4 +176,11 @@ body {
 .card {
     height: 300px;
     min-width: 400px;
+    margin: 20px;  
+
 }
+
+.card-direction {
+    border-left: 7px solid red !important;
+}
+
