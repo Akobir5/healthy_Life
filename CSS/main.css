@@ -50,6 +50,7 @@ body {
     font-size: 40px;
     font-weight: bold;
     color: rgb(231, 231, 231);
+    margin-top: 30px;
 }
 
 .contentSpan {
@@ -64,8 +65,6 @@ body {
     margin: 35px 0;
     padding: 17px 45px;
     background-color: rgba(70, 4, 223, 0.685);
-    /* border-bottom-right-radius: 40px;
-    border-top-left-radius: 40px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,9 +76,6 @@ body {
 } */
 
 .clinic_Envelope h3 {
-    /* position: absolute;
-    top: 80px;
-    left: 145px; */
     margin: 0;
 }
 
@@ -163,7 +159,7 @@ body {
     width: 100%;
     padding: 50px 0;
     box-shadow: 0 0 30px rgb(204, 204, 204);
-    margin-top: -75px;
+    margin-top: -70px;
     z-index: 50;
     background-color: #fff;
     border-radius: 10px;
@@ -177,10 +173,56 @@ body {
     height: 300px;
     min-width: 400px;
     margin: 20px;  
-
 }
 
 .card-direction {
     border-left: 7px solid red !important;
 }
 
+.secondType {
+    height: 195px;
+}
+
+.popularText {
+    text-align: center;
+    margin: 45px 0 20px;
+    font-size: 35px;
+}
+
+.card-body a {
+    color: #333;
+    text-decoration: none;
+}
+
+.card-body p {
+    font-size: 14px;
+}
+
+.nameToConrent {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.textC1 {
+    font-size: 13px;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.card-body ul li {
+    font-size: 14px;
+}
+
+.card-body ul li  {
+    padding: 0;
+    margin: 0;
+    
+    line-height: 19px;
+}
+
+.textIll {
+    font-size: 14px;
+}
