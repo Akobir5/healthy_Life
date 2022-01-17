@@ -22,19 +22,18 @@ body {
     position: relative;
     width: 100vw;
     height: 87vh;
-    background-image: url(../IMG/clinic.jpg);
-    background-size: cover;
+    background: linear-gradient(to left, rgb(1, 70, 161), rgb(1, 190, 149));
     background-attachment: fixed;
-    color: #fff;
+    color: #142585;
 }
 
-.headerMain::before {
+/* .headerMain::before {
     content: '';
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(6, 3, 161, 0.452);
-}
+    background: linear-gradient(to left, rgba(3, 172, 144, 0.603), rgba(1, 190, 165, 0.671));
+} */
 
 .clinic_Middle {
     position: relative;
@@ -47,41 +46,39 @@ body {
 }
 
 .clinic_Middle h2 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
-    color: rgb(231, 231, 231);
-    margin-top: 30px;
+    color: rgb(20,37,133);
+    margin-top: 100px;
 }
 
 .contentSpan {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .clinic_Envelope {
     position: relative;
-    margin: 35px 0;
-    padding: 17px 45px;
-    background-color: rgba(70, 4, 223, 0.685);
+    margin: 25px 0;
+    padding: 10px 35px;
+    background-color: rgb(20,37,133);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* 
-.clinic_Envelope img {
-    width: 550px;
-} */
 
 .clinic_Envelope h3 {
     margin: 0;
+    font-size: 22px;
+    color: #fff;
 }
 
 .degree {
-    color: rgba(70, 4, 223, 0.685);
-    font-size: 100px;
+    color: rgb(20,37,133);
+    font-size: 85px;
 }
 
 
@@ -89,7 +86,7 @@ body {
     width: 600px;
     margin-top: 0 40px;
     padding: 0 20px;
-    border: 2px solid rgba(70, 4, 223, 0.685);
+    border: 2px solid rgb(20,37,133);
     position: relative;
     display: flex;
     align-items: center;
@@ -107,11 +104,11 @@ body {
     font-size: 22px;
     background-color: transparent;
     border: none;
-    color: #fff;
+    color: rgb(20,37,133);
 }
 
 .searchButton::placeholder {
-    color: rgb(212, 211, 211);
+    color: rgb(20,37,133);
 }
 
 .search_Form button {
@@ -126,7 +123,7 @@ body {
 
 .search_Form button i {
     font-size: 35px;
-    color: rgb(233, 233, 233);
+    color: rgb(20,37,133);
     font-weight: 400;
 }
 
@@ -141,11 +138,11 @@ body {
 }
 
 .certificate:hover {
-    text-decoration: underline 2px solid #fff;
+    text-decoration: underline 2px solid #142585;
 }
 
-.certificate img {
-    width: 50px;
+.fa-file-certificate {
+    font-size: 30px;
 }
 
 .sectionContainer {
@@ -225,4 +222,27 @@ body {
 
 .textIll {
     font-size: 14px;
+}
+
+
+.Ba_Img {
+    width: 300px;
+    position: absolute;
+    left: 100px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.Ba_Img2 {
+    width: 300px;
+    position: absolute;
+    right: 100px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }

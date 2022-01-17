@@ -1,5 +1,5 @@
 {
-    "comment" : [
+    "carusel_Comment" : [
         {
             "nameAndCountry": "Хазем Махмуд Сами М., Египет",
             "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
@@ -15,54 +15,182 @@
             "id": 2
         },
         {
-            "nameAndCountry": "Хазем Махмуд Сами М., Египет",
-            "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
-            "info": "Хазем Махмуд Сами М., Египет, Август 2017, Многопрофильная клиника Превентикум",
-            "location": "Диагностическая клиника Превентикум Эссен",
+            "nameAndCountry": "Галина Г., Россия",
+            "img": "https://static.bookinghealth.com/uploads/reviews/6846-foto-with-professor_512.jpg",
+            "info": "Галина Г., Россия, Сентябрь 2017, Университетская клиника Бонн, Профессор, Доктор медицины Франк Г. Хольц.",
+            "location": "Университетская клиника Бонн",
             "id": 3
         },
         {
-            "nameAndCountry": "Хазем Махмуд Сами М., Египет",
+            "nameAndCountry": "Борис Т., США",
             "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
-            "info": "Хазем Махмуд Сами М., Египет, Август 2017, Многопрофильная клиника Превентикум",
-            "location": "Диагностическая клиника Превентикум Эссен",
+            "info": "Борис Т., США, март 2017, Академическая клиника Швабинг при Университете Людвига Максимиллиана, Профессор, Доктор медицины Роберт Ритцел.",
+            "location": "Клиника Швабинг Мюнхен",
             "id": 4
         },
         {
-            "nameAndCountry": "Хазем Махмуд Сами М., Египет",
-            "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
-            "info": "Хазем Махмуд Сами М., Египет, Август 2017, Многопрофильная клиника Превентикум",
-            "location": "Диагностическая клиника Превентикум Эссен",
+            "nameAndCountry": "Ляззат Д., Казахстан",
+            "img": "https://static.bookinghealth.com/uploads/reviews/5742-otr_2020-08-18_15-38-45.jpg",
+            "info": "Ляззат Д., Казахстан, Август 2020, Клиника женского здоровья и ЭКО Jinepol Стамбул, Турция",
+            "location": "Клиника женского здоровья и ЭКО Jinepol Стамбул",
             "id": 5
         },
         {
-            "nameAndCountry": "Хазем Махмуд Сами М., Египет",
-            "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
-            "info": "Хазем Махмуд Сами М., Египет, Август 2017, Многопрофильная клиника Превентикум",
-            "location": "Диагностическая клиника Превентикум Эссен",
+            "nameAndCountry": "Фиона К., Ирландия",
+            "img": "https://static.bookinghealth.com/uploads/reviews/2098-otr_Fiona-C.-1.jpg",
+            "info": "Фиона К., Ирландия, Июль 2021, Клиника расширенной биологической медицины Франкфурт на Майне, Доктор мед. Герхард Зибенхюнер",
+            "location": "Клиника расширенной биологической медицины Франкфурт на Майне",
             "id": 6
         },
         {
-            "nameAndCountry": "Хазем Махмуд Сами М., Египет",
-            "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
-            "info": "Хазем Махмуд Сами М., Египет, Август 2017, Многопрофильная клиника Превентикум",
-            "location": "Диагностическая клиника Превентикум Эссен",
+            "nameAndCountry": "Маргит Х., Дания",
+            "img": "https://static.bookinghealth.com/uploads/reviews/4894-otr_patient-photo.jpg",
+            "info": "Маргит Х., Дания, Июль 2020, Университетская клиника им. Гёте Франкфурт на Майне, Проф. Доктор мед. Томас Фогль",
+            "location": "Университетская клиника им. Гёте Франкфурт на Майне",
             "id": 7
         },
         {
-            "nameAndCountry": "Хазем Махмуд Сами М., Египет",
-            "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
-            "info": "Хазем Махмуд Сами М., Египет, Август 2017, Многопрофильная клиника Превентикум",
-            "location": "Диагностическая клиника Превентикум Эссен",
+            "nameAndCountry": "Ирина А., Эстония",
+            "img": "https://static.bookinghealth.com/uploads/reviews/9137-otr_maria_08-1.jpg",
+            "info": "Ирина А., Эстония, Январь 2021, Клиника ГЕЛИОС Крефельд, Проф. Доктор мед. Михаель Фридрих.",
+            "location": "Клиника ГЕЛИОС Крефельд",
             "id": 8
         },
         {
-            "nameAndCountry": "Хазем Махмуд Сами М., Египет",
-            "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
-            "info": "Хазем Махмуд Сами М., Египет, Август 2017, Многопрофильная клиника Превентикум",
-            "location": "Диагностическая клиника Превентикум Эссен",
+            "nameAndCountry": "Ирина К., Беларусь",
+            "img": "https://static.bookinghealth.com/uploads/reviews/9885-512_IMG_6395.jpg",
+            "info": "Ирина К., Беларусь, Август 2017, Университетская клиника Бонн, Профессор, Доктор Фингер.",
+            "location": "Университетская клиника Бонн",
             "id": 9
         }
-
+    ],
+    "carusel_Video" : [
+        {
+            "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/5a0bfb649d704.jpg",
+            "link_Video": "https://www.youtube.com/embed/sTkf_TkOuVQ",
+            "id": 1
+        },
+        {
+            "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/cover6.jpg",
+            "link_Video": "https://www.youtube.com/embed/6feHu0kZ2KI",
+            "id": 2
+        },
+        {
+            "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/cover9.jpg",
+            "link_Video": "https://www.youtube.com/embed/t9nBDoIsX8U",
+            "id": 3
+        },
+        {
+            "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/cover10.jpg",
+            "link_Video": "https://www.youtube.com/embed/t9nBDoIsX8U",
+            "id": 4
+        },
+        {
+            "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/cover11.jpg",
+            "link_Video": "https://www.youtube.com/embed/U0sLnFYfvPE",
+            "id": 5
+        },
+        {
+            "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/cover12.jpg",
+            "link_Video": "https://www.youtube.com/embed/nVVPuauxLpc",
+            "id": 6
+        },
+        {
+            "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/5a0bf62eb6c80.jpg",
+            "link_Video": "https://www.youtube.com/embed/U_C03ujVhis",
+            "id": 7
+        },
+        {
+            "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/5a0eacd78eccb.jpg",
+            "link_Video": "https://www.youtube.com/embed/akwT5ywRVn8",
+            "id": 8
+        },
+        {
+            "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/cover7.jpg",
+            "link_Video": "https://www.youtube.com/embed/C7nnVBkUoHk",
+            "id": 9
+        }
+    ],
+    "carusel_Clinic": [
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/600045ab0e114.jpg",
+            "name_Building": "Университетская клиника Тюбингена",
+            "id": 1
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/600188f5cffb3.jpg",
+            "name_Building": "Университетская клиника Дюссельдорф",
+            "id": 2
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ff71a94092b7.jpg",
+            "name_Building": "Университетская клиника Ульма",
+            "id": 3
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/60018b988ab2a.jpg",
+            "name_Building": "Университетская клиника им. Гёте Франкфурт на Майне",
+            "id": 4
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/600042586ac6f.jpg",
+            "name_Building": "Университетская клиника Гамбург-Эппендорф",
+            "id": 5
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/600049903f041.jpg",
+            "name_Building": "Университетская клиника Мюнхенского университета им.",
+            "id": 6
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ff71d3fe387b.jpg",
+            "name_Building": "Университетская клиника Вюрцбурга",
+            "id": 7
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/60018cf310417.jpg",
+            "name_Building": "Университетская клиника Шарите Берлин",
+            "id": 8
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ff7190c69573.jpg",
+            "name_Building": "Университетская клиника Йена",
+            "id": 9
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/600040a7d28a6.jpg",
+            "name_Building": "Высшая медицинская школа Ганновера (MHH)",
+            "id": 10
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/600046ad76a18.jpg",
+            "name_Building": "Университетская клиника Мюнстер",
+            "id": 11
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/6005637e586af.jpg",
+            "name_Building": "Университетская клиника Рехтс дер Изар Мюнхен",
+            "id": 12
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/60018f85a561b.jpg",
+            "name_Building": "Университетская клиника Гейдельберг",
+            "id": 13
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/6000418484004.jpg",
+            "name_Building": "Университетская клиника Галле (Заале)",
+            "id": 14
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ff834cf5a337.jpg",
+            "name_Building": "Клиника Гелиос Берлин-Бух",
+            "id": 15
+        },
+        {
+            "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ffc5d682dca4.jpg",
+            "name_Building": "Клиника Вивантес Каульсдорф Берлин ‹›НАЙТИ КЛИНИКУ",
+            "id": 16
+        }
     ]
 }

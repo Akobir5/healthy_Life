@@ -22,11 +22,11 @@
 
 .logoLink {
     text-decoration: none;
-    color: #fff;
+    color: #142585;
 }
 
 .logoLink:hover {
-    color: #fff;
+    color: #142585;
 }
 
 .logo {
@@ -78,6 +78,7 @@ nav ul li {
     -moz-transition: 0.5 ease;
     -ms-transition: 0.5 ease;
     -o-transition: 0.5 ease;
+    color: #fff;
 }
 
 .headerScroll .container {
@@ -88,6 +89,7 @@ nav ul li {
 
 .headerScroll .logo h1 {
     font-size: 30px;
+    color: #fff;
 }
 
 .headerScroll .logo h2 {
@@ -95,4 +97,5 @@ nav ul li {
     position: absolute;
     top: 25px;
     right: -50px;
+    color: #fff;
 }
