@@ -84,6 +84,7 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 10px;
 }
 
 .headerScroll .logo h1 {

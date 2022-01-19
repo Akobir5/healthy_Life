@@ -102,11 +102,12 @@ body {
     font-size: 22px;
     background-color: transparent;
     border: none;
-    color: rgb(20,37,133);
+    color: rgb(255, 255, 255);
 }
 
 .searchButton::placeholder {
-    color: rgb(20,37,133);
+    color: rgb(221, 221, 221);
+    font-size: 17px;
 }
 
 .search_Form button {
@@ -117,11 +118,12 @@ body {
     width: 20px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .search_Form button i {
     font-size: 35px;
-    color: rgb(20,37,133);
+    color: rgb(255, 255, 255);
     font-weight: 400;
 }
 
@@ -145,10 +147,11 @@ body {
 }
 
 .sectionContainer {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 30px;
+    padding: 0 30px;
 }
 
 .section {
@@ -166,29 +169,38 @@ body {
 }
 
 .row {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.rowGreen {
+.card {
     width: 270px;
     height: 300px;
-    margin: 20px 0;  
-}
-
-.card {
-    height: 100%;
-    min-width: 100%;
+    margin: 20px 0;
     border: 1px solid rgb(212, 212, 212);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
 }
 
+.card:hover {
+    background-color: rgba(243, 243, 243, 0.781);
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
 
 .card-direction {
     border-left: 7px solid red !important;
@@ -274,6 +286,18 @@ body {
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
 }
+
+.menu_Icon {
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
 @media screen and (max-width:1200px)  {
     
     .headerMain {
@@ -287,10 +311,11 @@ body {
 
     
     .row {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
     }
 
 
