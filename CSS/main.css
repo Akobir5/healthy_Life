@@ -214,6 +214,7 @@ body {
     text-align: center;
     margin: 45px 0 20px;
     font-size: 35px;
+    font-weight: 500;
 }
 
 .card-body {
@@ -292,7 +293,9 @@ body {
     display: none;
 }
 
-
+.fa-star {
+    color: #fff;
+}
 
 
 
@@ -300,22 +303,28 @@ body {
 
 @media screen and (max-width:1200px)  {
     
-    .headerMain {
+    .headerH > .container {
+        margin: 0 40px !important;
+    }
+
+    .sectionContainer {
         width: 100%;
     }
 
-    .headerH > .container {
-        min-width: 100%;
-        margin: 0 10px !important;
+    .popularSection {
+        width: 100%;
     }
 
+    .popularSection > .container {
+        width: 100%;
+    }
     
     .row {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap !important;
+        flex-wrap: wrap;
     }
 
 
