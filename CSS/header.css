@@ -81,11 +81,15 @@ nav ul li {
     color: #fff;
 }
 
-.headerScroll .container {
+.headerScroll .header_Content .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 10px;
+}
+
+.header_Content {
+    width: 100%;
 }
 
 .headerScroll .logo h1 {

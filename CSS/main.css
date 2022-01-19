@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -303,19 +303,11 @@ body {
 
 @media screen and (max-width:1200px)  {
     
-    .headerH > .container {
-        margin: 0 40px !important;
+    .header_Content {
+        padding: 0 30px;
     }
 
-    .sectionContainer {
-        width: 100%;
-    }
-
-    .popularSection {
-        width: 100%;
-    }
-
-    .popularSection > .container {
+    .container {
         width: 100%;
     }
     
@@ -332,7 +324,7 @@ body {
 
 
 
-@media screen and (max-width:1026px)  {
+@media screen and (max-width:990px)  {
     
     
 
