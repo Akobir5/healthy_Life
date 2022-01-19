@@ -12,6 +12,7 @@ body {
 
 .container {
     width: 1170px;
+    margin: 0 auto;
 }
 
 .headerMain {
@@ -22,19 +23,13 @@ body {
     position: relative;
     width: 100vw;
     height: 87vh;
-    background: linear-gradient(to left, #00CEC8, rgb(1, 130, 190));
+    background: linear-gradient(
+        180deg
+        ,rgb(20,37,133), #00d6cf);
     background-attachment: fixed;
     color: #fff;
     /* color: #142585; */
 }
-
-/* .headerMain::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: linear-gradient(to left, rgba(3, 172, 144, 0.603), rgba(1, 190, 165, 0.671));
-} */
 
 .clinic_Middle {
     position: relative;
@@ -59,11 +54,11 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-top: 40px;
+    margin: 25px 0;
 }
 
 .clinic_Envelope {
     position: relative;
-    margin: 25px 0;
     padding: 10px 35px;
     background-color: rgb(20,37,133);
     display: flex;
@@ -81,6 +76,7 @@ body {
 .degree {
     color: rgb(20,37,133);
     font-size: 85px;
+    margin-top: 1px;
 }
 
 
@@ -129,6 +125,7 @@ body {
     font-weight: 400;
 }
 
+
 .certificate {
     position: relative;
     display: flex;
@@ -168,11 +165,30 @@ body {
     -o-border-radius: 10px;
 }
 
-.card {
-    height: 300px;
-    min-width: 400px;
-    margin: 20px;  
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+.rowGreen {
+    width: 270px;
+    height: 300px;
+    margin: 20px 0;  
+}
+
+.card {
+    height: 100%;
+    min-width: 100%;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
 
 .card-direction {
     border-left: 7px solid red !important;
@@ -188,6 +204,12 @@ body {
     font-size: 35px;
 }
 
+.card-body {
+    padding: 20px;
+    text-overflow: ellipsis;
+}
+
+
 .card-body a {
     color: #333;
     text-decoration: none;
@@ -195,6 +217,7 @@ body {
 
 .card-body p {
     font-size: 14px;
+    margin-top: 10px;
 }
 
 .nameToConrent {
@@ -211,14 +234,12 @@ body {
     color: #333;
 }
 
-.card-body ul li {
-    font-size: 14px;
+.card-body ul {
+    margin: 15px 0 15px 30px;
 }
 
-.card-body ul li  {
-    padding: 0;
-    margin: 0;
-    
+.card-body ul li {
+    font-size: 14px;
     line-height: 19px;
 }
 
@@ -226,6 +247,11 @@ body {
     font-size: 14px;
 }
 
+.ill_Name_Menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .Ba_Img {
     width: 300px;
@@ -247,4 +273,60 @@ body {
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
+}
+@media screen and (max-width:1200px)  {
+    
+    .headerMain {
+        width: 100%;
+    }
+
+    .headerH > .container {
+        min-width: 100%;
+        margin: 0 10px !important;
+    }
+
+    
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:1026px)  {
+    
+    
+
+}
+
+
+@media screen and (max-width:960px)  {
+    
+
+
+}
+
+
+@media screen and (max-width:840px)  {
+    
+
+
+}
+
+
+@media screen and (max-width:540px)  {
+    
+
+
+}
+
+@media screen and (max-width:480px)  {
+    
+
+
 }

@@ -17,7 +17,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 23px;
 }
 
 .logoLink {
@@ -44,8 +43,8 @@
     font-weight: 700;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
     position: absolute;
-    top: 30px;
-    right: -90px;
+    top: 27px;
+    right: -50px;
 }
 
 nav ul {
@@ -99,3 +98,4 @@ nav ul li {
     right: -50px;
     color: #fff;
 }
+
