@@ -193,6 +193,10 @@ body {
     -o-transition: .3s ease;
 }
 
+.rowGreen {
+    padding: 0 15px;
+}
+
 .card:hover {
     background-color: rgba(243, 243, 243, 0.781);
     transition: .3s ease;
@@ -204,6 +208,12 @@ body {
 
 .card-direction {
     border-left: 7px solid red !important;
+}
+
+.popularSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .secondType {
@@ -290,8 +300,7 @@ body {
     -o-border-radius: 100%;
 }
 
-.menu_Icon {
-    cursor: pointer;
+.ill_Name_Menu .fa-bars {
     display: none;
 }
 
@@ -313,6 +322,7 @@ body {
 }
 
 
+
 @media screen and (max-width:1200px)  {
     
     .header_Content {
@@ -332,21 +342,106 @@ body {
     }
 
     .clinic_Middle h2 {
-        margin-top: 30px;
+        margin-top: 70px;
         padding: 0 20px;
         text-align: center;
         font-size: 30px;
     }
 
+    nav ul li {
+        font-size: 14px;
+    }
+
+    nav ul li:nth-of-type(6) {
+        margin-left: 15px;
+    }
+
+    .height_Response {
+        width: 270px;
+        height: 300px;
+        margin: 20px 0;
+        border: 1px solid rgb(212, 212, 212);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        transition: .3s ease;
+        -webkit-transition: .3s ease;
+        -moz-transition: .3s ease;
+        -ms-transition: .3s ease;
+        -o-transition: .3s ease;
+    }
 
 }
 
+@media (max-width:990px)  {
 
-@media screen and (max-width:990px)  {
+    /* .headerH {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    } */
+
+    /* .headerScroll {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    .header_Content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
 
 
-    .headerH {
-        padding: 15px 0;
+    .container {
+        max-width: 100%;
+        margin: 0 90px;
+        padding: 0;
+    }
+
+    .rowGreen {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        /* padding: 18px;
+        height: 65px;
+        overflow-y: hidden; */
+        height: auto;
+    }
+
+    .card-body {
+        box-sizing: content-box;
+        padding: 10px 25px;
+    }
+
+    .ill_Name_Menu {
+        margin: 5px 0 10px;
+    }
+
+    .ill_Name_Menu .menu_Icon {
+        display: block;
+        font-size: 20px;
+    }
+
+    .card-body ul {
+        margin: 15px 0;
+    }
+
+    .card-body ul li {
+        list-style: none;
+        padding: 10px 20px;
+        font-size: 17px;
+        font-weight: 500;
+        border-bottom: 1px solid rgba(136, 119, 119, 0.295);
     }
 
     .headerH .logo h1 {
@@ -398,9 +493,20 @@ body {
 
 
 @media screen and (max-width:770px)  {
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .popularSection .container {
+        margin: 0;
+        padding: 0;
+    }
     
     .header_Content {
-        padding: 0 10px;
+        padding: 0 20px;
     }
 
     .headerH {
