@@ -267,6 +267,7 @@ body {
 }
 
 .Ba_Img {
+    display: none;
     width: 300px;
     position: absolute;
     left: 100px;
@@ -278,6 +279,7 @@ body {
 }
 
 .Ba_Img2 {
+    display: none;
     width: 300px;
     position: absolute;
     right: 100px;
@@ -297,8 +299,18 @@ body {
     color: #fff;
 }
 
+.humburger_Nav {
+    display: none;
+}
 
-
+.non_Response_Nav ul li:active {
+    background-color: rgba(255, 255, 255, 0.171);
+    transition: .4s ease;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -ms-transition: .4s ease;
+    -o-transition: .4s ease;
+}
 
 
 @media screen and (max-width:1200px)  {
@@ -319,35 +331,127 @@ body {
         flex-wrap: wrap;
     }
 
+    .clinic_Middle h2 {
+        margin-top: 30px;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+
 
 }
-
 
 
 @media screen and (max-width:990px)  {
+
+
+    .headerH {
+        padding: 15px 0;
+    }
+
+    .headerH .logo h1 {
+        font-size: 23px;
+        font-weight: 600;
+    }   
+
+    .headerH .logo h2 {
+        font-size: 20px;
+        font-weight: 600;
+        top: 20px;
+        left: 75px;
+    }
     
+    .headerScroll h1 {
+        font-size: 25px;
+        transition: .3s ease;
+        -webkit-transition: .3s ease;
+        -moz-transition: .3s ease;
+        -ms-transition: .3s ease;
+        -o-transition: .3s ease;
+}
+    .headerScroll h2 {
+        font-size: 23px;
+        transition: .3s ease;
+        -webkit-transition: .3s ease;
+        -moz-transition: .3s ease;
+        -ms-transition: .3s ease;
+        -o-transition: .3s ease;
+    }
+
+    .non_Response_Nav {
+        display: none;
+    }
+
     
+    .humburger_Nav {
+        display: block;
+        
+    }
+
+    .humburger_Nav span {
+        padding: 10px;
+        font-size: 23px;
+        cursor: pointer;
+    }
 
 }
 
 
-@media screen and (max-width:960px)  {
+@media screen and (max-width:770px)  {
     
+    .header_Content {
+        padding: 0 10px;
+    }
 
+    .headerH {
+        background-color: rgba(0, 0, 0, 0.39);
+    }
+
+    .headerScroll {
+        width: 100%;
+        margin: 0 0 20px;
+        padding: 13px 0;
+        background-color: rgba(0, 0, 0, 0.822);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.5 ease;
+        -webkit-transition: 0.5 ease;
+        -moz-transition: 0.5 ease;
+        -ms-transition: 0.5 ease;
+        -o-transition: 0.5 ease;
+        color: #fff;
+    }
+
+    .clinic_Middle {
+        margin-top: 0;
+    }
+
+    .clinic_Middle h2 {
+        margin-top: 0;
+        font-size: 25px;
+    }
+
+    .search_Form {
+        width: 95vw;
+    }
+
+    .search_Form button {
+        padding: 10px 25px;
+    }
+
+    .certificate {
+        margin-top: 50px;
+    }
 
 }
 
 
-@media screen and (max-width:840px)  {
+@media screen and (max-width:545px)  {
     
-
-
-}
-
-
-@media screen and (max-width:540px)  {
-    
-
+    .clinic_Envelope h3 {
+        font-size: 19px;
+    }
 
 }
 

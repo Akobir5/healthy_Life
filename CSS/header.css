@@ -22,6 +22,7 @@
 .logoLink {
     text-decoration: none;
     color: #fff;
+    padding-bottom: 10px;
 }
 
 .logoLink:hover {
@@ -37,6 +38,11 @@
 .logo h1 {
     font-weight: 900;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
 }
 
 .logo h2 {
@@ -45,6 +51,11 @@
     position: absolute;
     top: 27px;
     right: -50px;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
 }
 
 nav ul {
@@ -59,6 +70,16 @@ nav ul li {
     padding: 15px;
     margin-left: 5px;
     cursor: pointer;
+    transition: .4s ease;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -ms-transition: .4s ease;
+    -o-transition: .4s ease;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .searchBtn, .accauntBtn {
@@ -85,7 +106,6 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 10px;
 }
 
 .header_Content {
@@ -95,13 +115,17 @@ nav ul li {
 .headerScroll .logo h1 {
     font-size: 30px;
     color: #fff;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    letter-spacing: 1px;
 }
 
 .headerScroll .logo h2 {
     font-size: 27px;
     position: absolute;
     top: 25px;
-    right: -50px;
+    right: -55px;
     color: #fff;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    letter-spacing: 1px;
 }
 
