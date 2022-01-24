@@ -382,9 +382,17 @@ body {
     }
 
     .headerMain {
-        background-image: url();
+        background-image: url(https://wallpaperbat.com/img/385060-medical-doctor-wallpaper-86185-kb.jpg);
 
         background-size: cover;
+    }
+
+    .headerMain::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.418);
     }
 
     .header_Content {
