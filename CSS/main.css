@@ -106,7 +106,7 @@ body {
 }
 
 .searchButton::placeholder {
-    color: rgb(221, 221, 221);
+    color: #fff;
     font-size: 17px;
 }
 
@@ -123,7 +123,7 @@ body {
 
 .search_Form button i {
     font-size: 35px;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-weight: 400;
 }
 
@@ -277,7 +277,7 @@ body {
 }
 
 .Ba_Img {
-    display: none;
+    
     width: 300px;
     position: absolute;
     left: 100px;
@@ -289,7 +289,7 @@ body {
 }
 
 .Ba_Img2 {
-    display: none;
+    
     width: 300px;
     position: absolute;
     right: 100px;
@@ -377,33 +377,27 @@ body {
 
 @media (max-width:990px)  {
 
-    /* .headerH {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .Ba_Img, .Ba_Img2 {
+        display: none;
+    }
 
-    } */
+    .headerMain {
+        background-image: url();
 
-    /* .headerScroll {
+        background-size: cover;
+    }
+
+    .header_Content {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-    } */
-
-    .header_Content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
+        padding: 0 35px;
         margin: 0;
     }
 
-
     .container {
-        max-width: 100%;
-        margin: 0 90px;
-        padding: 0;
+        width: 80%;
     }
 
     .rowGreen {
@@ -411,20 +405,30 @@ body {
     }
 
     .card {
+        margin: 10px 0;
         width: 100%;
-        /* padding: 18px;
-        height: 65px;
-        overflow-y: hidden; */
-        height: auto;
-    }
+        padding: 18px;
+        height: 70px;
+        overflow-y: hidden;
+        padding: 0;
+        transition: 0.5s linear;
+        -webkit-transition: 0.5s linear;
+        -moz-transition: 0.5s linear;
+        -ms-transition: 0.5s linear;
+        -o-transition: 0.5s linear;
+}
 
     .card-body {
-        box-sizing: content-box;
-        padding: 10px 25px;
+        padding: 0 25px;
     }
 
     .ill_Name_Menu {
-        margin: 5px 0 10px;
+        margin: 25px 0;
+        margin-bottom: 30px;
+    }
+
+    .second_Response {
+        height: 90px;
     }
 
     .ill_Name_Menu .menu_Icon {
@@ -434,6 +438,11 @@ body {
 
     .card-body ul {
         margin: 15px 0;
+    }
+
+    .name_response {
+        font-size: 21px;
+        padding-bottom: 15px;
     }
 
     .card-body ul li {
@@ -489,10 +498,24 @@ body {
         cursor: pointer;
     }
 
+
+    .humburger_checked {
+        height: auto;
+        transition: 0.5s linear;
+        -webkit-transition: 0.5s linear;
+        -moz-transition: 0.5s linear;
+        -ms-transition: 0.5s linear;
+        -o-transition: 0.5s linear;
+}
+
 }
 
 
 @media screen and (max-width:770px)  {
+
+    .sectionContainer {
+        padding: 0 10px;
+    }
 
     .container {
         width: 100%;
@@ -563,6 +586,20 @@ body {
 
 @media screen and (max-width:480px)  {
     
-
+    .rowGreen {
+        padding: 0 5px;
+    }
 
 }
+
+@media screen and (max-width:360px) {
+    .response_third {
+        height: 80px;
+    }
+
+    .response_third  .ill_Name_Menu {
+        margin: 20px 0;
+    }
+}
+
+
