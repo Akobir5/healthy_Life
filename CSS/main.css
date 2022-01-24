@@ -6,6 +6,11 @@
     font-family: Arial, sans-serif;
 }
 
+*::selection {
+    background-color: rgb(125, 0, 197);
+    color: #fff;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -740,7 +745,7 @@ small::before {
 
 }
 
-@media screen and (max-width:360px) {
+/* @media screen and (max-width:360px) {
     .response_third {
         height: 80px;
     }
@@ -748,6 +753,6 @@ small::before {
     .response_third  .ill_Name_Menu {
         margin: 20px 0;
     }
-}
+} */
 
 
