@@ -156,7 +156,7 @@ body {
 
 .section {
     width: 100%;
-    padding: 50px 0;
+    padding: 0;
     box-shadow: 0 0 30px rgb(204, 204, 204);
     margin-top: -70px;
     z-index: 50;
@@ -198,7 +198,7 @@ body {
 }
 
 .card:hover {
-    background-color: rgba(243, 243, 243, 0.781);
+    background-color: rgba(224, 224, 224, 0.781);
     transition: .3s ease;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
@@ -222,7 +222,7 @@ body {
 
 .popularText {
     text-align: center;
-    margin: 45px 0 20px;
+    margin: 27px 0;
     font-size: 35px;
     font-weight: 500;
 }
@@ -332,6 +332,7 @@ small {
     display: flex;
     align-items: center;
     font-size: 11px;
+    margin: 0 0 8px;
 }
 
 small::before {
@@ -340,9 +341,110 @@ small::before {
 }
 
 .carusel_Box_Control {
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
+.carusel_Img {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card_Carusel {
+    width: 33.3333%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.carusel_control {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 30px;
+    margin: 0 0 20px;
+    border-left: 4px solid rgba(0, 0, 0, 0.096);
+}
+
+.carusel_control p {
+    font-size: 12px;
+    color: #333;
+    line-height: 17px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.carusel_control p img {
+    width: 100%;
+    margin: 5px 0;
+    padding-right: 10px;
+}
+
+.btnControl {
+    position: absolute;
+    height: 300px;
+    border: none;
+    background-color: transparent;
+    font-size: 50px;
+    cursor: pointer;
+    color: rgba(51, 51, 51, 0.692);
+}
+
+.btnControl:hover {
+    color: #333;
+}
+
+.left_ControlBtn {
+    left: -20px;
+}
+.right_ControlBtn {
+    right: -20px;
+}
+
+.video_carusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.video_carusel .left_ControlBtn {
+    left: 270px;
+}
+
+.video_carusel .right_ControlBtn {
+    right: 270px;
+}
+/* 
+.text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.text-center a {
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    color: rgba(0,0,0,.75);
+    font-size: 12px;
+    text-decoration: none;
+    box-shadow: 0 -2px 0 0 rgb(0 0 0 / 25%) inset
+}
+
+.section-control {
+    padding: 70px 0;
+}
 
 @media screen and (max-width:1200px)  {
     
