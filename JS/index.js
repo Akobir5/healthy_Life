@@ -17,3 +17,5 @@ menu_Icon.forEach((item, index) => {
 })
 
 
+
+alert('hello')
