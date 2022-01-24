@@ -17,3 +17,8 @@ menu_Icon.forEach((item, index) => {
 })
 
 let link_json = ''
+fetch(link_json)
+.then(response => response.json())
+.then(data => getInfo(data))
+
+
