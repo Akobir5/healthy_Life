@@ -446,6 +446,21 @@ small::before {
     padding: 70px 0;
 }
 
+.video_Box {
+    width: 560px;
+    height: 325px;
+}
+
+.video_Box iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.video_Box img {
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (max-width:1200px)  {
     
     .header_Content {
