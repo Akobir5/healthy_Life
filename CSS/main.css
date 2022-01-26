@@ -474,7 +474,7 @@ small::before {
 
 .hospital_partner button {
     color: #89B8D0;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .hospital_partner button:hover {
@@ -486,6 +486,7 @@ small::before {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    margin: 0 20px;
 }
 
 .hospital_owerflov {
@@ -514,7 +515,6 @@ small::before {
     text-align: center;
     font-size: 16px;
     font-weight: 550;
-    line-height: 1.4em;
     margin: 10px 0;
 }
 
@@ -531,9 +531,35 @@ small::before {
     border: 1px solid #fff;
 }
 
+.search_Hospital {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 .search_Hospital a {
-    color: #fff;
+    font-size: 14px;
+    padding: 12px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 -2px 0 0 rgb(0 0 0 / 25%) inset;
+    color: #333;
     text-decoration: none;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.search_Hospital a:active {
+    background-color: rgb(202, 189, 189);
+    transition: background 0.4s linear;
+    -webkit-transition: background 0.4s linear;
+    -moz-transition: background 0.4s linear;
+    -ms-transition: background 0.4s linear;
+    -o-transition: background 0.4s linear;
 }
 
 
@@ -605,6 +631,10 @@ small::before {
     .video_carusel button:nth-of-type(2) {
         right: 150px;
     }
+
+    /* .hospital_buildings {
+        margin: 0 20px;
+    } */
 
 }
 
@@ -780,6 +810,23 @@ small::before {
         width: 100%;
     }
 
+    .hospital_owerflov {
+        width: 100%;
+    }
+
+    .hospital_Box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .hospital_little {
+        width: 100%;
+    }
+
+    .search_Hospital {
+        margin-top: 10px;
+    }
+
 }
 
 
@@ -866,6 +913,10 @@ small::before {
     
     .clinic_Envelope h3 {
         font-size: 19px;
+    }
+
+    .hospital_buildings {
+        margin: 0;
     }
 
 }
