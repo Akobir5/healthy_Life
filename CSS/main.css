@@ -466,6 +466,88 @@ small::before {
     height: 100%;
 }
 
+.hospital_partner {
+    background: #1371a1 url(https://static.bookinghealth.com/i/img/s_back.webp) repeat scroll 0 0/cover;
+    color: #fff;
+    padding: 7px 0 30px;
+}
+
+.hospital_partner button {
+    color: #89B8D0;
+    font-size: 22px;
+}
+
+.hospital_partner button:hover {
+    color: #fff;
+}
+
+.hospital_buildings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hospital_owerflov {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hospital_Box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hospital_little {
+    width: 25%;
+    padding: 0 15px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.title_building {
+    height: 45px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 1.4em;
+    margin: 10px 0;
+}
+
+.hospital_little a {
+    width: 100%;
+    height: 230px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hospital_little a img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+}
+
+.search_Hospital a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:1300px) {
+
+    .history_Of_Rating .mark_Main {
+        margin: 0 20px;
+    }
+
+    .carusel_control {
+        padding: 10px 25px;
+    }
+}
+
 @media screen and (max-width:1200px)  {
     
     .header_Content {
@@ -514,6 +596,14 @@ small::before {
         -moz-transition: .3s ease;
         -ms-transition: .3s ease;
         -o-transition: .3s ease;
+    }
+
+    .video_carusel button:nth-of-type(1) {
+        left: 150px;
+    }
+
+    .video_carusel button:nth-of-type(2) {
+        right: 150px;
     }
 
 }
@@ -661,6 +751,35 @@ small::before {
         -o-transition: 0.5s linear;
 }
 
+.history_Of_Rating .mark_Main {
+    margin: 0;
+}
+
+.card_Carusel {
+    
+    margin: 20px 0;
+}
+
+.btnControl {
+    display: none;
+}
+
+.carusel_control {
+    padding: 10px;
+}
+
+    .carusel_Img {
+        flex-direction: column;
+    }
+
+    .carusel_Img > div {
+        width: 100%;
+    }
+
+    .carusel_control p img {
+        width: 100%;
+    }
+
 }
 
 
@@ -726,6 +845,20 @@ small::before {
         margin-top: 50px;
     }
 
+}
+
+
+@media screen and (max-width:620px) {
+    .video_Box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video_Box img {
+        width: 95%;
+    }
 }
 
 
