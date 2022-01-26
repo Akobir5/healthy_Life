@@ -229,7 +229,7 @@ body {
     text-align: center;
     margin: 27px 0;
     font-size: 35px;
-    font-weight: 500;
+    font-weight: 450;
 }
 
 .card-body {
@@ -647,6 +647,10 @@ small::before {
         display: none;
     }
 
+    .section-control {
+        padding: 25px 0;
+    }
+
     .headerMain {
         background-image: url(https://previews.123rf.com/images/leventegyori/leventegyori1506/leventegyori150600144/41664052-doctor-con-el-fondo-m%C3%A9dico.jpg);
 
@@ -654,6 +658,11 @@ small::before {
 
         background-size: cover;
         height: 75vh;
+    }
+
+    .popularText {
+        color: inherit;
+        font-size: 27px;
     }
 
     .headerMain::before {
