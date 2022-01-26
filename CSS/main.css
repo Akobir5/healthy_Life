@@ -565,6 +565,21 @@ small::before {
     -o-transition: background 0.4s linear;
 }
 
+.info_main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info_main > div {
+    width: 50%;
+}
+
+.info_little_control p {
+    margin: 0 0 10px;
+}
+
 
 @media screen and (max-width:1300px) {
 
