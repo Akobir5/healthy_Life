@@ -444,7 +444,10 @@ small::before {
     color: rgba(0,0,0,.75);
     font-size: 12px;
     text-decoration: none;
-    box-shadow: 0 -2px 0 0 rgb(0 0 0 / 25%) inset
+    box-shadow: 0 -2px 0 0 rgb(0 0 0 / 25%) inset;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .section-control {
@@ -650,6 +653,7 @@ small::before {
         /* background-image: url(https://wallpaperbat.com/img/385060-medical-doctor-wallpaper-86185-kb.jpg); */
 
         background-size: cover;
+        height: 75vh;
     }
 
     .headerMain::before {
