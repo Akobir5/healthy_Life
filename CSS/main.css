@@ -383,9 +383,19 @@ small::before {
     color: #333;
     line-height: 17px;
     display: flex;
+    text-overflow: ellipsis;
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
+
+}
+
+.carusel_control p span {
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .carusel_control p img {
@@ -429,25 +439,26 @@ small::before {
 .video_carusel .right_ControlBtn {
     right: 270px;
 }
-/* 
+
 .text-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+    padding: 10px 0;
+}
 
 .text-center a {
-    padding: 10px 20px;
+    padding: 5px 20px;
     width: 100%;
-    height: 100%;
+    height: 35px;
+    text-align: center;
     background-color: #f2f2f2;
     color: rgba(0,0,0,.75);
     font-size: 12px;
     text-decoration: none;
     box-shadow: 0 -2px 0 0 rgb(0 0 0 / 25%) inset;
-    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
     overflow: hidden;
-    text-overflow: ellipsis;
+      text-overflow: ellipsis;
 }
 
 .section-control {
