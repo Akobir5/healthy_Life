@@ -993,7 +993,7 @@ small::before {
 
 @media screen and (max-width:770px)  {
 
-    ..text-center a {
+    .text-center a {
         padding: 10px 20px;
         display: flex;
         align-items: center;
