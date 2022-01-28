@@ -459,6 +459,7 @@ small::before {
     -webkit-box-orient: vertical;  
     overflow: hidden;
       text-overflow: ellipsis;
+      align-items: center;
 }
 
 .section-control {
@@ -991,6 +992,13 @@ small::before {
 
 
 @media screen and (max-width:770px)  {
+
+    ..text-center a {
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .hospital_information {
         padding-top: 70px;
