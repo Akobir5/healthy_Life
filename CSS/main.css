@@ -681,6 +681,72 @@ small::before {
     font-weight: 900;
 }
 
+.pro_Big_Text {
+    text-align: center;
+    color: #fff;
+    padding: 7px;
+    margin: 26px 0;
+    font-size: 26px;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    background: #1371a1 url(https://static.bookinghealth.com/i/img/s_back.png) repeat scroll 0 0 / cover;
+}
+
+.like_Info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.like_Info:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.like_Info > div {
+    width: 33.333%;
+    padding: 0 15px;
+}
+
+.like_Info > div > div {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 12px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.fa-check-circle {
+    border-radius: 100%;
+    background-color: #1a9c1e;
+    color: #fff;
+    font-size: 25px;
+    margin-left: 6px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.fa-minus-circle {
+    font-size: 25px;
+    margin-left: 6px;
+    color: #f55145;
+}
+
+.like_Info > div > p {
+    text-align: justify;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.d_label {
+    height: 48px;
+}
+
 @media screen and (max-width:1270px) {
     .container {
         width: 100%;
@@ -688,6 +754,10 @@ small::before {
 
     .header_Content {
         padding: 0 30px;
+    }
+
+    .pro_control {
+        margin: 0 30px;
     }
 }
 
@@ -777,6 +847,18 @@ small::before {
 }
 
 @media (max-width:990px)  {
+
+    .like_Info {
+        flex-direction: column;
+    }
+
+    .pro_control {
+        margin: 0;
+    }
+
+    .like_Info > div {
+        width: 100%;
+    }
 
     .text-center a {
         padding: 10px 20px;
@@ -1023,7 +1105,7 @@ small::before {
     .container {
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 0 15px;
     }
 
     .popularSection .container {

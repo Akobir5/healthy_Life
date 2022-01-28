@@ -83,7 +83,7 @@ let year_Info = [
     },
     {
         year: '2011',
-        year_Text: 'Идея о создании Booking Health &trade;'
+        year_Text: 'Идея о создании Booking Health™'
     }
 ]
 
