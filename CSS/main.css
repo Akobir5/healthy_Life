@@ -445,7 +445,7 @@ small::before {
 }
 
 .text-center a {
-    padding: 5px 20px;
+    padding: 10px 20px;
     width: 100%;
     height: 35px;
     text-align: center;
@@ -454,12 +454,6 @@ small::before {
     font-size: 12px;
     text-decoration: none;
     box-shadow: 0 -2px 0 0 rgb(0 0 0 / 25%) inset;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-      text-overflow: ellipsis;
-      align-items: center;
 }
 
 .section-control {
@@ -718,6 +712,15 @@ small::before {
     /* .container {
         width: 100%;
     } */
+
+    .text-center a {
+        padding: 5px 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+          text-overflow: ellipsis;
+    }
     
     .row {
         width: 100%;
@@ -774,6 +777,13 @@ small::before {
 }
 
 @media (max-width:990px)  {
+
+    .text-center a {
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .info_main {
         flex-direction: column;
@@ -992,13 +1002,6 @@ small::before {
 
 
 @media screen and (max-width:770px)  {
-
-    .text-center a {
-        padding: 10px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     .hospital_information {
         padding-top: 70px;
