@@ -62,6 +62,8 @@ let textInfo = [ "Booking Health™ – самый крупный и прозр�
         
 ]
 
+let nnnn =  console.log('hello world');
+
 let year_Info = [
     {
         year: '2020',
