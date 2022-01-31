@@ -747,6 +747,104 @@ small::before {
     height: 48px;
 }
 
+.hospital_advantages {
+    padding: 25px 0 30px;
+    background-image: url(https://static.bookinghealth.com/i/img/adw_bg.jpg);
+}
+
+.advantages_Box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.advantages_Box > div {
+    width: 33.333%;
+    min-height: 226px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 25px;
+    padding: 0 15px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    background-color: #ffffffb3;
+}
+
+.advantages_Box > div:nth-of-type(2) {
+    border-right: 1px solid #1371a1;
+    border-left: 1px solid #1371a1;
+}
+
+.advantages_Box > div > i {
+    font-size: 55px;
+    margin: 30px 0 25px;
+    color: rgba(51, 51, 51, 0.733);
+}
+
+.hospital_question {
+    background-color: #eeeeee;
+}
+
+.hospital_question > div {
+    text-align: center;
+    color: #333;
+}
+
+.fa-comments-alt {
+    font-size: 65px;
+}
+
+.mainQuestionText {
+    margin: 26px 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.hospital_question > div > p {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.start_phone {
+    font-size: 26px;
+    margin: 15px 0;
+}
+
+.start_location {
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.send_question {
+    color: #fff;
+    background: -webkit-linear-gradient(top,#578ebf,#3f78ab);
+    padding: 12px 30px;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 3px 3px 7px 0 rgb(64 121 171 / 50%), inset 0 -3px 0 0 #326089;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 30%);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.send_question:hover {
+    transition: background 0.4s linear;
+    background: #46b8da;
+    -webkit-transition: background 0.4s linear;
+    -moz-transition: background 0.4s linear;
+    -ms-transition: background 0.4s linear;
+    -o-transition: background 0.4s linear;
+}
+
+
+
 @media screen and (max-width:1270px) {
     .container {
         width: 100%;
@@ -851,6 +949,19 @@ small::before {
 }
 
 @media (max-width:990px)  {
+
+    .advantages_Box {
+        flex-direction: column;
+    }
+
+    .advantages_Box > div {
+        width: 100%;
+    }
+
+    .advantages_Box > div:nth-of-type(2) {
+        border: none;
+    }
+
 
     .like_Info {
         flex-direction: column;
