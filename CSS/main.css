@@ -846,7 +846,7 @@ small::before {
 
     .like_Info {
         cursor: none;
-        background-color: none;
+        background-color: #1371a1;
     }
 
 }
