@@ -856,10 +856,6 @@ small::before {
         flex-direction: column;
     }
 
-    .section {
-        margin-top: -70px;
-    }
-
     .pro_control {
         margin: 0;
     }
@@ -903,7 +899,7 @@ small::before {
         background-image: url(https://previews.123rf.com/images/leventegyori/leventegyori1506/leventegyori150600144/41664052-doctor-con-el-fondo-m%C3%A9dico.jpg);
 
         background-size: cover;
-        height: 65vh;
+        height: 75vh;
     }
 
     .popularText {
@@ -1095,6 +1091,18 @@ small::before {
         padding-top: 70px;
     }
 
+    .section {
+        margin-top: -70px;
+    }
+
+    .headerMain {
+        height: 67vh;
+    }
+
+    .section {
+        margin-top: -70px;
+    }
+
     .hospital_information .popularText {
         display: none;
     }
@@ -1111,7 +1119,7 @@ small::before {
     .container {
         width: 100%;
         margin: 0;
-        padding: 0 15px;
+        padding: 0;
     }
 
     .popularSection .container {
