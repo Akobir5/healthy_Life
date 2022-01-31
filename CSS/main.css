@@ -843,6 +843,65 @@ small::before {
     -o-transition: background 0.4s linear;
 }
 
+.hospital_All_Info_Section {
+    padding: 25px 0 70px;
+}
+
+.hospital_All_Info_Section h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 24px 0;
+}
+
+.text_discription {
+    position: relative;
+    font-size: 14px;
+    color: #333;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 11;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.text_discription_before::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    background: -moz-linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(255,255,255,0)),color-stop(100%,#fff));
+    background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);
+    background: -o-linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);
+    background: -ms-linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);
+    background: linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);
+}
+
+
+
+.text_Non_discription {
+    display: -webkit-box;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: vertical;  
+    overflow: visible;
+}
+
+.text_discription ol, ul, p {
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.text_discription ol, ul {
+    padding: 0 0 0 40px;
+}
+
+.big_span {
+    padding: 25px 0;
+}
 
 
 @media screen and (max-width:1270px) {

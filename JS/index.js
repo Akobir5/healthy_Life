@@ -4,6 +4,24 @@ let card = document.querySelectorAll('.card')
 let info_little_control = document.querySelectorAll('.info_little_control')
 let all_text_P = document.querySelector('.all_text_P')
 let ul_Box = document.querySelector('.yearOfControl')
+let big_span = document.querySelector('.big_span')
+let text_discription = document.querySelector('.text_discription')
+// let little_Span = document.querySelector('.little_Span')
+text_discription.classList.add('text_discription_before')
+
+big_span.addEventListener('click', () => {
+    text_discription.classList.toggle('text_Non_discription')
+
+    if(text_discription.classList.contains('text_Non_discription')){
+        text_discription.classList.remove('text_discription_before')
+        big_span.innerText = "Свернуть"
+    } else {
+        big_span.innerText = "Читать далее"
+        text_discription.classList.add('text_discription_before')
+    }
+
+
+})
 
 
 // var hiddenElement = document.getElementById("box");
