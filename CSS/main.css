@@ -699,7 +699,7 @@ small::before {
 }
 
 .like_Info:hover {
-    background-color: #eee;
+    background-color: #eeeeee;
     cursor: pointer;
 }
 
@@ -840,10 +840,17 @@ small::before {
         right: 150px;
     }
 
-    /* .hospital_buildings {
-        margin: 0 20px;
-    } */
+    .info_main > div:nth-last-of-type(2):hover {
+        cursor: none;
+    }
 
+    .like_Info {
+        cursor: none;
+    }
+
+    .like_Info:active {
+        background-color: none;
+    }
 }
 
 @media (max-width:990px)  {
