@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     position: relative;
     width: 100vw;
-    height: 87vh;
+    height: 83vh;
     background: linear-gradient(
         180deg
         ,rgb(20,37,133), #00d6cf);
@@ -162,15 +162,20 @@ body {
 .section {
     width: 100%;
     padding: 0;
-    box-shadow: 0 0 30px rgb(204, 204, 204);
-    margin-top: -50px;
+    /* box-shadow: 0 0 30px rgb(204, 204, 204); */
+    /* margin-top: -50px; */
     z-index: 50;
     background-color: #fff;
-    border-radius: 10px;
+    /* border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    -o-border-radius: 10px; */
+
+
+    margin: -60px 0 0;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgb(0 0 0 / 14%), 0 6px 30px 5px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
 }
 
 .row {
@@ -316,6 +321,10 @@ body {
 
 .humburger_Nav {
     display: none;
+}
+
+.popularText:nth-of-type(1){
+    margin-bottom: 10px;
 }
 
 .non_Response_Nav ul li:active {
@@ -918,8 +927,9 @@ small::before {
 }
 
 .button_Text_overflow {
-    margin: 0 10px;
+    margin: 0 15px;
 }
+
 
 
 @media screen and (max-width:1270px) {
@@ -933,6 +943,10 @@ small::before {
 
     .pro_control {
         margin: 0 30px;
+    }
+
+    .footer_response {
+        padding: 0 30px;
     }
 }
 
@@ -1026,6 +1040,35 @@ small::before {
 }
 
 @media (max-width:990px)  {
+
+    .footer_response {
+        padding: 0;
+    }
+
+    .footer_information {
+        flex-wrap: wrap;
+    }
+
+    .footer_information > div {
+        width: 25%;
+    }
+
+    .footer_information > div > p > a {
+        white-space: nowrap;
+    }
+
+    .footer_information > div:nth-of-type(4) {
+        padding-top: 25px;
+        margin-left: 10px;
+    }
+    .footer_information > div:nth-of-type(5) {
+        padding-top: 10px;
+        margin-left: 30px;
+    }
+
+    .copy_info {
+        margin: 5px 15px;
+    }
 
     .advantages_Box {
         flex-direction: column;
@@ -1274,6 +1317,40 @@ small::before {
 
 
 @media screen and (max-width:770px)  {
+
+    * {
+        cursor: none;
+    }
+
+    .footer_information {
+        flex-direction: column;
+    }
+
+    .footer_information > div:nth-of-type(3) {
+        padding-left: 25px !important;
+        padding-top: 25px !important;
+    }
+
+    .footer_information > div:nth-of-type(4) {
+        padding-left: 25px;
+        padding-top: 25px;
+        margin: 0;
+    }
+
+    .footer_information > div:nth-of-type(5) {
+        padding-left: 25px;
+        padding-top: 25px;
+        margin: 0;
+    }
+
+    .footer_information > div {
+        width: 90% !important;
+    }
+
+    .copy_info {
+        width: 90%;
+        padding: 10px 25px;
+    }
 
     .yearOfControl {
         padding: 0;

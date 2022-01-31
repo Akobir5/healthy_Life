@@ -1,0 +1,170 @@
+footer {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 17px;
+}
+
+footer > div > div > div > div > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer  > div > div > div > div > p > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer > div > div > div > div > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer > div > div > div > ul > li {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.copy_info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copy_info a:hover {
+    text-decoration: 1px underline #fff;
+}
+
+.footer_information, .copy_info {
+    width: 100%;
+}
+
+.footer_information {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer_information > div {
+    width: 16.6667%;
+    padding: 0 15px;
+}
+
+.footer_information > div:nth-of-type(3) {
+    padding: 5px !important;
+}
+
+.footer_information > div:nth-of-type(3) > p {
+    font-size: 14px;
+}
+
+.footer_information > div:nth-of-type(4) {
+    width: 25%;
+}
+
+.footer_information > div:nth-of-type(5) {
+    width: 25%;
+}
+
+.footer_information > div > ul > li > a {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    display: block;
+}
+
+.footer_information > div > ul > li > a:active {
+    text-decoration: 1px underline #fff;
+    background-color: rgba(255, 255, 255, 0.342);
+    transition: background 0.5s ease;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+}
+
+.phone_number > p {
+    font-size: 14px;
+
+}
+
+.phone_number > p > a {
+    display: flex;
+    align-items: center;
+    
+}
+
+.phone_number > p > a:hover {
+    text-decoration: 1px underline #fff;
+}
+
+.phone_number > p > a > img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.social_media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social_media li {
+    width: auto;
+}
+
+.social_media li a {
+    font-size: 22px !important;
+    padding: 10px;
+}
+
+.social_media li a:active {
+    background-color: rgba(255, 255, 255, 0.342);
+    transition: background 0.5s ease;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+}
+
+.comp_icons {
+    display: flex;
+    align-items: center;
+    margin-left: -15px;
+}
+
+.comp_icons img {
+    margin: 8px;
+    width: 64px;
+}
+
+.copyright {
+    font-size: 14px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.copy_info, .copy_info a {
+    font-size: 12px;
+    color: #9a9a9a;
+}
+
+.copy_info a:hover {
+    text-decoration: 1px underline #9a9a9a;
+}
+
+/* .ripple-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+} */
