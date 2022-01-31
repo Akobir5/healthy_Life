@@ -1276,7 +1276,7 @@ small::before {
 @media screen and (max-width:770px)  {
 
     .yearOfControl {
-        padding-right: 15px;
+        padding: 0;
     }
 
     .pro_Big_Text {
