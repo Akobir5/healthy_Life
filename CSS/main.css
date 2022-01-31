@@ -1087,6 +1087,10 @@ small::before {
 
 @media screen and (max-width:770px)  {
 
+    .pro_Big_Text {
+        margin: 26px 15px;
+    }
+
     .hospital_information {
         padding-top: 70px;
     }
