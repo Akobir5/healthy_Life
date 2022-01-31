@@ -1344,12 +1344,13 @@ small::before {
     }
 
     .footer_information > div {
-        width: 90% !important;
+        width: 95% !important;
     }
 
     .copy_info {
-        width: 90%;
+        width: 95%;
         padding: 10px 25px;
+        margin: 0;
     }
 
     .yearOfControl {
