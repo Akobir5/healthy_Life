@@ -844,9 +844,8 @@ small::before {
         cursor: none;
     }
 
-    .like_Info {
+    .like_Info:hover {
         cursor: none;
-        background-color: #1371a1;
     }
 
 }
