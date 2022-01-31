@@ -846,11 +846,9 @@ small::before {
 
     .like_Info {
         cursor: none;
-    }
-
-    .like_Info:active {
         background-color: none;
     }
+
 }
 
 @media (max-width:990px)  {
@@ -900,8 +898,6 @@ small::before {
 
     .headerMain {
         background-image: url(https://previews.123rf.com/images/leventegyori/leventegyori1506/leventegyori150600144/41664052-doctor-con-el-fondo-m%C3%A9dico.jpg);
-
-        /* background-image: url(https://wallpaperbat.com/img/385060-medical-doctor-wallpaper-86185-kb.jpg); */
 
         background-size: cover;
         height: 75vh;
