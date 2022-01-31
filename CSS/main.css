@@ -900,7 +900,25 @@ small::before {
 }
 
 .big_span {
-    padding: 25px 0;
+    padding: 5px 0;
+    position: relative;
+    cursor: pointer;
+    color: #1371a1;
+    font-size: 15px;
+}
+
+.big_span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    border-bottom: 1px solid #1371a1;
+}
+
+.button_Text_overflow {
+    margin: 0 10px;
 }
 
 
@@ -1256,6 +1274,10 @@ small::before {
 
 
 @media screen and (max-width:770px)  {
+
+    .yearOfControl {
+        padding: 0 0 0 25px;
+    }
 
     .pro_Big_Text {
         margin: 26px 15px;
