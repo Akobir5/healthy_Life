@@ -7,6 +7,23 @@ let ul_Box = document.querySelector('.yearOfControl')
 let big_span = document.querySelector('.big_span')
 let text_discription = document.querySelector('.text_discription')
 // let little_Span = document.querySelector('.little_Span')
+
+// IMG Carusel Rtn
+
+let imgBtnRight = document.querySelector('.imgBtnRight')
+let imgBtnLeft = document.querySelector('.imgBtnLeft')
+let overflow_Block = document.querySelector('.overflow_Block')
+
+// IMG Carusel Rtn
+
+// VIDEO Carusel Rtn
+
+let videoBtnRight = document.querySelector('.videoBtnRight')
+let videoBtnLeft = document.querySelector('.videoBtnLeft')
+let video_owerflov = document.querySelector('.video_owerflov')
+
+// VIDEO Carusel Rtn
+
 text_discription.classList.add('text_discription_before')
 
 big_span.addEventListener('click', () => {
@@ -47,11 +64,6 @@ menu_Icon.forEach((item, index) => {
     })
 })
 
-// let link_json = 'http://localhost:3004/carusel_Comment'
-// fetch(link_json)
-// .then(response => response.json())
-// .then(data => getInfo(data))
-
 let textInfo = [ "Booking Health™ – самый крупный и прозрачный медицинский туристический сервис в мире. На нашем сайте представлены более 250 клиник в      Австрии, Германии, Швейцарии, Индии, Коста-Рике, Турции, Таиланде, Польше, Венгрии, Израиле, ОАЭ, Южной Корее и Японии. До размещения на сайте клиника       проходит тщательную проверку по количеству успешных и безопасных операций, уровню оснащенности, комфортности пребывания и другим показателям."
         , "На сайте представлены свыше 700 000 медицинских программ на выбор клиента. Это программы базового и расширенного профилактического обследования (чек ап), индивидуальная диагностика в сложных клинических случаях, амбулаторное и стационарное лечение, реабилитация и СПА-отдых."
         , "Наша цель – предоставить возможность пациентам из любой точки мира самостоятельно в режиме онлайн подобрать клинику, которая предлагает оптимальную для них медицинскую программу, видеть стоимость этой программы и заказать ее по лучшей цене. Для принятия наиболее выгодного для себя решения пациент и его родственники могут детально изучить информацию о сертификатах клиники, достижениях лечащего врача, методиках лечения и стоимости услуг."
@@ -62,7 +74,6 @@ let textInfo = [ "Booking Health™ – самый крупный и прозр�
         
 ]
 
-let nnnn =  console.log('hello world');
 
 let year_Info = [
     {
@@ -126,4 +137,51 @@ for(let x = 0; x < year_Info.length; x++) {
     li_Of_Ul.appendChild(year_Text_Box) 
     ul_Box.appendChild(li_Of_Ul)
 }
+
+let link_json = 'http://localhost:3004/carusel_Comment'
+fetch(link_json)
+.then(response => response.json())
+.then(data => getInfo(data))
+
+let i = 0
+
+function createSliderElement (nameAndCountry, img, info, location) {
+    let card_Carusel = document.createElement('div')
+    card_Carusel.classList.add('card_Carusel')
+    let carusel_control = document.createElement('div')
+    carusel_control.classList.add('carusel_control')
+    let small = document.createElement('small')
+    small.innerText = nameAndCountry
+    carusel_control.appendChild(small)
+    let textP = document.createElement('p')
+    let caruselImg = document.createElement('img')
+    caruselImg.setAttribute('src', img)
+    textP.appendChild(caruselImg)
+    let span = document.createElement('span')
+    span.innerText = info
+    textP.appendChild(span)
+    carusel_control.appendChild(textP)
+    let textCenter = document.createElement('div')
+    textCenter.classList.add('text-center')
+    let linkA = document.createElement('a')
+    linkA.innerText = location
+    textCenter.appendChild(linkA)
+    card_Carusel.appendChild(carusel_control)
+    card_Carusel.appendChild(textCenter)
+}
+
+function getInfo(data) {
+    console.log(data[0].id)
+
+
+}
+
+
+    
+    // for(let z = 0; z < 4; z++){
+    //     let carusel_Img = document.createElement('div')
+    //     carusel_Img.classList.add('carusel_Img')
+    //     carusel_Img.appendChild(card_Carusel)
+    //     overflow_Block.appendChild(card_Carusel)
+    // }
 

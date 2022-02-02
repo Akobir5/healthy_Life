@@ -327,13 +327,13 @@ body {
     margin-bottom: 10px;
 }
 
-.non_Response_Nav ul li:active {
+.non_Response_Nav ul .active_menu_btn:active {
     background-color: rgba(255, 255, 255, 0.171);
-    transition: .4s ease;
-    -webkit-transition: .4s ease;
-    -moz-transition: .4s ease;
-    -ms-transition: .4s ease;
-    -o-transition: .4s ease;
+    transition: background .2s ease;
+    -webkit-transition: background .2s ease;
+    -moz-transition: background .2s ease;
+    -ms-transition: background .2s ease;
+    -o-transition: background .2s ease;
 }
 
 .carusel_Img {
@@ -355,6 +355,7 @@ small::before {
 }
 
 .carusel_Box_Control {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -435,11 +436,17 @@ small::before {
 }
 
 .video_carusel {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
+
+/* .video_owerflov {
+    width: 900%;
+    overflow: hidden;
+} */
 
 .video_carusel .left_ControlBtn {
     left: 270px;
@@ -899,17 +906,21 @@ small::before {
     overflow: visible;
 }
 
-.text_discription ol, ul, p {
+.text_discription > p {
     margin-bottom: 10px;
     line-height: 20px;
 }
 
 .text_discription > ol {
     padding: 0 0 0 40px;
+    margin-bottom: 10px;
+    line-height: 20px;
 }
 
 .text_discription > ul {
     padding: 0 0 0 40px;
+    margin-bottom: 10px;
+    line-height: 20px;
 }
 
 .big_span {
@@ -936,6 +947,10 @@ small::before {
 
 /*classlist*/ /*classlist*/ /*classlist*/ /*classlist*/ /*classlist*/ /*classlist*/ /*classlist*/ /*classlist*/
 
+.menu_home {
+    position: relative;
+}
+
 .background_fixed {
     width: 100vw;
     height: 100vh;
@@ -958,8 +973,6 @@ small::before {
     display: flex;
     flex-direction: column;
 
-
-    display: none;
 }
 
 
@@ -1529,4 +1542,8 @@ small::before {
     }
 } */
 
+.overflow_Block {
+    width: 300%;
+    overflow: hidden;
+}
 
