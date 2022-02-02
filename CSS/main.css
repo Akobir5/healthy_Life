@@ -662,11 +662,11 @@ small::before {
 
 .yearOfControl li:hover > div:nth-last-of-type(2) {
     background-color: rgba(224, 224, 224, 0.781) ;
-    transition: .3s ease;
-    -webkit-transition: .3s ease;
-    -moz-transition: .3s ease;
-    -ms-transition: .3s ease;
-    -o-transition: .3s ease;
+    transition: background .3s ease;
+    -webkit-transition: background .3s ease;
+    -moz-transition: background .3s ease;
+    -ms-transition: background .3s ease;
+    -o-transition: background .3s ease;
 }
 
 .yearOfControl li::before {
@@ -904,7 +904,11 @@ small::before {
     line-height: 20px;
 }
 
-.text_discription ol, ul {
+.text_discription > ol {
+    padding: 0 0 0 40px;
+}
+
+.text_discription > ul {
     padding: 0 0 0 40px;
 }
 
@@ -1230,9 +1234,6 @@ small::before {
         font-size: 20px;
     }
 
-    .card-body ul {
-        margin: 15px 0;
-    }
 
     .name_response {
         font-size: 21px;
