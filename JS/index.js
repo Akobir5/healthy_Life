@@ -24,6 +24,7 @@ let video_owerflov = document.querySelector('.video_owerflov')
 
 // VIDEO Carusel Rtn
 
+
 text_discription.classList.add('text_discription_before')
 
 big_span.addEventListener('click', () => {
@@ -64,7 +65,7 @@ menu_Icon.forEach((item, index) => {
     })
 })
 
-let textInfo = [ "Booking Health™ – самый крупный и прозрачный медицинский туристический сервис в мире. На нашем сайте представлены более 250 клиник в      Австрии, Германии, Швейцарии, Индии, Коста-Рике, Турции, Таиланде, Польше, Венгрии, Израиле, ОАЭ, Южной Корее и Японии. До размещения на сайте клиника       проходит тщательную проверку по количеству успешных и безопасных операций, уровню оснащенности, комфортности пребывания и другим показателям."
+let textInfo = [ "Healtthy Life™ – самый крупный и прозрачный медицинский туристический сервис в мире. На нашем сайте представлены более 250 клиник в      Австрии, Германии, Швейцарии, Индии, Коста-Рике, Турции, Таиланде, Польше, Венгрии, Израиле, ОАЭ, Южной Корее и Японии. До размещения на сайте клиника       проходит тщательную проверку по количеству успешных и безопасных операций, уровню оснащенности, комфортности пребывания и другим показателям."
         , "На сайте представлены свыше 700 000 медицинских программ на выбор клиента. Это программы базового и расширенного профилактического обследования (чек ап), индивидуальная диагностика в сложных клинических случаях, амбулаторное и стационарное лечение, реабилитация и СПА-отдых."
         , "Наша цель – предоставить возможность пациентам из любой точки мира самостоятельно в режиме онлайн подобрать клинику, которая предлагает оптимальную для них медицинскую программу, видеть стоимость этой программы и заказать ее по лучшей цене. Для принятия наиболее выгодного для себя решения пациент и его родственники могут детально изучить информацию о сертификатах клиники, достижениях лечащего врача, методиках лечения и стоимости услуг."
         ,  "При выборе между несколькими ведущими медицинскими учреждениями пациент может воспользоваться профессиональным советом наших врачей. Благодаря помощи медицинских специалистов Booking Health™ более 73 000 пациентов прошли необходимое лечение, включая инновационные методики, недоступные в их родной стране."
@@ -114,7 +115,7 @@ let year_Info = [
     },
     {
         year: '2011',
-        year_Text: 'Идея о создании Booking Health™'
+        year_Text: 'Идея о создании Healthy Life™'
     }
 ]
 
@@ -125,7 +126,6 @@ for(let i = 0; i < textInfo.length; i++) {
                                 
 }
 
-// text_Next[7].classList.add('bold_Text')
 
 for(let x = 0; x < year_Info.length; x++) {
     let li_Of_Ul = document.createElement('li')
@@ -138,50 +138,313 @@ for(let x = 0; x < year_Info.length; x++) {
     ul_Box.appendChild(li_Of_Ul)
 }
 
-let link_json = 'http://localhost:3004/carusel_Comment'
-fetch(link_json)
-.then(response => response.json())
-.then(data => getInfo(data))
-
-let i = 0
-
-function createSliderElement (nameAndCountry, img, info, location) {
-    let card_Carusel = document.createElement('div')
-    card_Carusel.classList.add('card_Carusel')
-    let carusel_control = document.createElement('div')
-    carusel_control.classList.add('carusel_control')
-    let small = document.createElement('small')
-    small.innerText = nameAndCountry
-    carusel_control.appendChild(small)
-    let textP = document.createElement('p')
-    let caruselImg = document.createElement('img')
-    caruselImg.setAttribute('src', img)
-    textP.appendChild(caruselImg)
-    let span = document.createElement('span')
-    span.innerText = info
-    textP.appendChild(span)
-    carusel_control.appendChild(textP)
-    let textCenter = document.createElement('div')
-    textCenter.classList.add('text-center')
-    let linkA = document.createElement('a')
-    linkA.innerText = location
-    textCenter.appendChild(linkA)
-    card_Carusel.appendChild(carusel_control)
-    card_Carusel.appendChild(textCenter)
-
-
-}
-
-function getInfo(data) {
-    console.log(data[0].card1[0])
-
-    for(let z = 0; z < data.length; z++) {
-        let cardNum = document.createElement('div')
-        cardNum.classList.add('carusel_Img')
-
-        
+let imgCarusel1 = [
+    {
+        "nameAndCountry": "Хазем Махмуд Сами М., Египет",
+        "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
+        "info": "Хазем Махмуд Сами М., Египет, Август 2017, Многопрофильная клиника Превентикум",
+        "location": "Диагностическая клиника Превентикум Эссен",   "id": 1
+    },
+    {
+        "nameAndCountry": "Маргит Х., Дания",
+        "img": "https://static.bookinghealth.com/uploads/reviews/4894-otr_patient-photo.jpg",
+        "info": "Маргит Х., Дания, Июль 2020, Университетская клиника им. Гёте Франкфурт на Майне, Проф. Доктор мед. Томас Фогль",
+        "location": "Диагностическая клиника Превентикум Эссен",  "id": 2
+    },
+    {
+        "nameAndCountry": "Галина Г., Россия",
+        "img": "https://static.bookinghealth.com/uploads/reviews/6846-foto-with-professor_512.jpg",
+        "info": "Галина Г., Россия, Сентябрь 2017, Университетская клиника Бонн, Профессор, Доктор медицины Франк Г. Хольц.",
+        "location": "Университетская клиника Бонн"
     }
+]
+
+let imgCarusel2 = [
+    {
+        "nameAndCountry": "Борис Т., США",
+        "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
+        "info": "Борис Т., США, март 2017, Академическая клиника Швабинг при Университете Людвига Максимиллиана, Профессор, Доктор медицины Роберт Ритцел.",
+        "location": "Клиника Швабинг Мюнхен"
+    },
+    {
+        "nameAndCountry": "Ляззат Д., Казахстан",
+        "img": "https://static.bookinghealth.com/uploads/reviews/5742-otr_2020-08-18_15-38-45.jpg",
+        "info": "Ляззат Д., Казахстан, Август 2020, Клиника женского здоровья и ЭКО Jinepol Стамбул, Турция",
+        "location": "Клиника женского здоровья и ЭКО Jinepol Стамбул"
+    },
+    {
+        "nameAndCountry": "Фиона К., Ирландия",
+        "img": "https://static.bookinghealth.com/uploads/reviews/2098-otr_Fiona-C.-1.jpg",
+        "info": "Фиона К., Ирландия, Июль 2021, Клиника расширенной биологической медицины Франкфурт на Майне, Доктор мед. Герхард Зибенхюнер",
+        "location": "Клиника расширенной биологической медицины Франкфурт на Майне"
+    }
+]
+
+let imgCarusel3 = [
+    {
+        "nameAndCountry": "Хазем Махмуд Сами М., Египет",
+        "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
+        "info": "Хазем Махмуд Сами М., Египет, Август 2017, Многопрофильная клиника Превентикум",
+        "location": "Диагностическая клиника Превентикум Эссен"
+    },
+    {
+        "nameAndCountry": "Маргит Х., Дания",
+        "img": "https://static.bookinghealth.com/uploads/reviews/4894-otr_patient-photo.jpg",
+        "info": "Маргит Х., Дания, Июль 2020, Университетская клиника им. Гёте Франкфурт на Майне, Проф. Доктор мед. Томас Фогль",
+        "location": "Диагностическая клиника Превентикум Эссен"
+    },
+    {
+        "nameAndCountry": "Галина Г., Россия",
+        "img": "https://static.bookinghealth.com/uploads/reviews/6846-foto-with-professor_512.jpg",
+        "info": "Галина Г., Россия, Сентябрь 2017, Университетская клиника Бонн, Профессор, Доктор медицины Франк Г. Хольц.",
+        "location": "Университетская клиника Бонн"
+    }
+]
+
+let videoCarusel = [
+    {
+        "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/5a0bfb649d704.jpg",
+        "link_Video": "https://www.youtube.com/embed/sTkf_TkOuVQ",
+        "id": 1
+    },
+    {
+        "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/cover6.jpg",
+        "link_Video": "https://www.youtube.com/embed/6feHu0kZ2KI",
+        "id": 2
+    },
+    {
+        "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/cover9.jpg",
+        "link_Video": "https://www.youtube.com/embed/t9nBDoIsX8U",
+        "id": 3
+    },
+    {
+        "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/cover10.jpg",
+        "link_Video": "https://www.youtube.com/embed/t9nBDoIsX8U",
+        "id": 4
+    },
+    {
+        "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/cover11.jpg",
+        "link_Video": "https://www.youtube.com/embed/U0sLnFYfvPE",
+        "id": 5
+    },
+    {
+        "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/cover12.jpg",
+        "link_Video": "https://www.youtube.com/embed/nVVPuauxLpc",
+        "id": 6
+    },
+    {
+        "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/5a0bf62eb6c80.jpg",
+        "link_Video": "https://www.youtube.com/embed/U_C03ujVhis",
+        "id": 7
+    },
+    {
+        "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/5a0eacd78eccb.jpg",
+        "link_Video": "https://www.youtube.com/embed/akwT5ywRVn8",
+        "id": 8
+    },
+    {
+        "img_Video": "https://static.bookinghealth.com/uploads/reviews/videocovers/cover7.jpg",
+        "link_Video": "https://www.youtube.com/embed/C7nnVBkUoHk",
+        "id": 9
+    }
+]
+
+
+let caruselClinic1 = [
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/600045ab0e114.jpg",
+        "name_Building": "Университетская клиника Тюбингена",
+        "id": 1
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/600188f5cffb3.jpg",
+        "name_Building": "Университетская клиника Дюссельдорф",
+        "id": 2
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ff71a94092b7.jpg",
+        "name_Building": "Университетская клиника Ульма",
+        "id": 3
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/60018b988ab2a.jpg",
+        "name_Building": "Университетская клиника им. Гёте Франкфурт на Майне",
+        "id": 4
+    }
+]
+
+let caruselClinic2 = [
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/600042586ac6f.jpg",
+        "name_Building": "Университетская клиника Гамбург-Эппендорф",
+        "id": 5
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/600049903f041.jpg",
+        "name_Building": "Университетская клиника Мюнхенского университета им.",
+        "id": 6
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ff71d3fe387b.jpg",
+        "name_Building": "Университетская клиника Вюрцбурга",
+        "id": 7
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/60018cf310417.jpg",
+        "name_Building": "Университетская клиника Шарите Берлин",
+        "id": 8
+    }
+]
+
+let caruselClinic3 = [
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ff7190c69573.jpg",
+        "name_Building": "Университетская клиника Йена",
+        "id": 9
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/600040a7d28a6.jpg",
+        "name_Building": "Высшая медицинская школа Ганновера (MHH)",
+        "id": 10
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/600046ad76a18.jpg",
+        "name_Building": "Университетская клиника Мюнстер",
+        "id": 11
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/6005637e586af.jpg",
+        "name_Building": "Университетская клиника Рехтс дер Изар Мюнхен",
+        "id": 12
+    }
+]
+
+let caruselClinic4 = [
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/60018f85a561b.jpg",
+        "name_Building": "Университетская клиника Гейдельберг",
+        "id": 13
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/6000418484004.jpg",
+        "name_Building": "Университетская клиника Галле (Заале)",
+        "id": 14
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ff834cf5a337.jpg",
+        "name_Building": "Клиника Гелиос Берлин-Бух",
+        "id": 15
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ffc5d682dca4.jpg",
+        "name_Building": "Клиника Вивантес Каульсдорф Берлин ‹›НАЙТИ КЛИНИКУ",
+        "id": 16
+    }
+]
+
+
+
+for(let a = 0; a < 3; a++) {
+    for(let a = 0; a <imgCarusel1.length; a++) {
+        console.log(a);
+        let card_Carusel = document.createElement('div')
+        card_Carusel.classList.add('card_Carusel')
+        card_Carusel.innerHTML = `
+        <div class="rtn">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+        `
+        let carusel_control = document.createElement('div')
+        carusel_control.classList.add('carusel_control')
+        let small = document.createElement('small')
+        small.innerText = imgCarusel1[a].nameAndCountry
+        carusel_control.appendChild(small)
+        let textP = document.createElement('p')
+        let caruselImg = document.createElement('img')
+        caruselImg.setAttribute('src', imgCarusel1[a].img)
+        textP.appendChild(caruselImg)
+        let span = document.createElement('span')
+        span.innerText = imgCarusel1[a].info
+        textP.appendChild(span)
+        carusel_control.appendChild(textP)
+        let textCenter = document.createElement('div')
+        textCenter.classList.add('text-center')
+        let linkA = document.createElement('a')
+        linkA.innerText = location
+        textCenter.appendChild(linkA)
+        card_Carusel.appendChild(carusel_control)
+        card_Carusel.appendChild(textCenter)
+        console.log(card_Carusel);
+        overflow_Block.appendChild(card_Carusel)
+    }
+    
+    let carusel_Img = document.createElement('div')
+    carusel_Img.classList.add('carusel_Img')
+    carusel_Img.appendChild(card_Carusel)
+    overflow_Block.appendChild(caruselImg)
 }
+
+
+    // let carusel_Img = document.createElement('div')
+    // carusel_Img.classList.add('carusel_Img')
+    // carusel_Img.appendChild(card_Carusel)
+    // overflow_Block.appendChild(caruselImg)
+
+
+// for(let j = 0; j < 3; j++) {
+//     let carusel_Img = document.createElement('div')
+//     carusel_Img.classList.add('carusel_Img')
+//     caruselImg.appendChild(card_Carusel)
+//     overflow_Block.appendChild(caruselImg)
+// }
+
+// let link_json = 'http://localhost:3004/carusel_Comment'
+// fetch(link_json)
+// .then(response => response.json())
+// .then(data => getInfo(data))
+
+// let i = 0
+
+
+// function getInfo(data) {
+
+//     for(let a = 0; a < data[0].length; a++) {
+//     console.log(a);
+//     let card_Carusel = document.createElement('div')
+//     card_Carusel.classList.add('card_Carusel')
+//     let carusel_control = document.createElement('div')
+//     carusel_control.classList.add('carusel_control')
+//     let small = document.createElement('small')
+//     small.innerText = nameAndCountry
+//     carusel_control.appendChild(small)
+//     let textP = document.createElement('p')
+//     let caruselImg = document.createElement('img')
+//     caruselImg.setAttribute('src', img)
+//     textP.appendChild(caruselImg)
+//     let span = document.createElement('span')
+//     span.innerText = info
+//     textP.appendChild(span)
+//     carusel_control.appendChild(textP)
+//     let textCenter = document.createElement('div')
+//     textCenter.classList.add('text-center')
+//     let linkA = document.createElement('a')
+//     linkA.innerText = location
+//     textCenter.appendChild(linkA)
+//     card_Carusel.appendChild(carusel_control)
+//     card_Carusel.appendChild(textCenter)
+//     }
+
+//     // for(let z = 0; z < data.length; z++) {
+//     //     console.log(z);
+//     //     let cardNum = document.createElement('div')
+//     //     cardNum.classList.add('carusel_Img')
+        
+//     // }
+// }
 
 
  
@@ -192,10 +455,3 @@ function getInfo(data) {
     //     overflow_Block.appendChild(card_Carusel)
     // }
 
-let menu_home = document.querySelector('.menu_home')
-
-menu_home.addEventListener('click', () => {
-    let background_fixed = document.createElement('div')
-    background_fixed.classList.toggle('background_fixed')
-    document.body.appendChild(background_fixed)
-})

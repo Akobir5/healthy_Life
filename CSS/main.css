@@ -959,25 +959,54 @@ small::before {
 
 }
 
+
+
 .menu_box {
     position: absolute;
-    bottom: -100px;
+    top: 58px;
     left: 0;
     display: flex;
     flex-direction: column;
+    width: 230px;
+    display: none;
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
+    padding: 5px 0;
+}
+
+.menu_box_check {
+    display: block;
+}
+
+.menu_box > li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
 }
 
 .menu_box > li > a {
     padding: 8px 20px;
-    margin: 0 5px;
     background-color: #fff;
     font-size: 14px;
     color: #333;
     display: block;
+    text-decoration: none;
 }
 
+.menu_box > li > a:hover {
+    background-color: rgb(247, 245, 150);
+}
 
+.ul_line {
+    margin: 3px 0;
+    height: 1px;
+    background-color: #333;
+}
 
+.menu_box li a:active > nav > ul > .menu_home {
+    background-color: none;
+}
 
 
 
@@ -1367,9 +1396,6 @@ small::before {
 
 @media screen and (max-width:770px)  {
 
-    * {
-        cursor: none;
-    }
 
     .footer_information {
         flex-direction: column;
