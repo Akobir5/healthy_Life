@@ -323,7 +323,7 @@ body {
     display: none;
 }
 
-.popularText:nth-of-type(1){
+.popularText1{
     margin-bottom: 10px;
 }
 
@@ -334,12 +334,6 @@ body {
     -moz-transition: background .2s ease;
     -ms-transition: background .2s ease;
     -o-transition: background .2s ease;
-}
-
-.carusel_Img {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 small {
@@ -362,7 +356,7 @@ small::before {
     position: relative;
 }
 
-.carusel_Img {
+.carusel_Img1, .carusel_Img2, .carusel_Img3 {
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -443,17 +437,34 @@ small::before {
     position: relative;
 }
 
-/* .video_owerflov {
+.video_owerflov {
     width: 900%;
-    overflow: hidden;
-} */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video_owerflov > div {
+    width: 100%;
+}
+
+.video_control_new {
+    width: 560px;
+    height: 320px;
+}
 
 .video_carusel .left_ControlBtn {
     left: 270px;
 }
 
 .video_carusel .right_ControlBtn {
+    top: 0;
     right: 270px;
+}
+
+.video_main_overflow {
+    width: 100%;
+    overflow: hidden;
 }
 
 .text-center {
@@ -477,7 +488,7 @@ small::before {
 }
 
 .video_Box {
-    width: 560px;
+    width: 100%;
     height: 325px;
 }
 
@@ -514,13 +525,19 @@ small::before {
     margin: 0 20px;
 }
 
-.hospital_owerflov {
-    display: flex;
-    align-items: center;
+.hospital_main_overflow {
+    width: 100%;
     overflow: hidden;
 }
 
-.hospital_Box {
+.hospital_owerflov {
+    width: 400%;
+    display: flex;
+    align-items: center;
+}
+
+.hospital_owerflov > div {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1122,6 +1139,12 @@ small::before {
 
 @media (max-width:990px)  {
 
+
+
+    .overflow_Block {
+        width: 100%;
+    }
+
     .footer_response {
         padding: 0;
     }
@@ -1568,8 +1591,16 @@ small::before {
     }
 } */
 
+.main_block_overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
 .overflow_Block {
     width: 300%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 

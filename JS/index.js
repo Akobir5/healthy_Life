@@ -6,8 +6,9 @@ let all_text_P = document.querySelector('.all_text_P')
 let ul_Box = document.querySelector('.yearOfControl')
 let big_span = document.querySelector('.big_span')
 let text_discription = document.querySelector('.text_discription')
-// let little_Span = document.querySelector('.little_Span')
-
+let carusel_Img1 = document.querySelector('.carusel_Img1')
+let carusel_Img2 = document.querySelector('.carusel_Img2')
+let carusel_Img3 = document.querySelector('.carusel_Img3')
 // IMG Carusel Rtn
 
 let imgBtnRight = document.querySelector('.imgBtnRight')
@@ -23,6 +24,7 @@ let videoBtnLeft = document.querySelector('.videoBtnLeft')
 let video_owerflov = document.querySelector('.video_owerflov')
 
 // VIDEO Carusel Rtn
+
 
 
 text_discription.classList.add('text_discription_before')
@@ -162,7 +164,7 @@ let imgCarusel1 = [
 let imgCarusel2 = [
     {
         "nameAndCountry": "Борис Т., США",
-        "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
+        "img": "https://static.bookinghealth.com/uploads/reviews/7768-92573_512.jpg",
         "info": "Борис Т., США, март 2017, Академическая клиника Швабинг при Университете Людвига Максимиллиана, Профессор, Доктор медицины Роберт Ритцел.",
         "location": "Клиника Швабинг Мюнхен"
     },
@@ -183,7 +185,7 @@ let imgCarusel2 = [
 let imgCarusel3 = [
     {
         "nameAndCountry": "Хазем Махмуд Сами М., Египет",
-        "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
+        "img": "https://static.bookinghealth.com/uploads/reviews/9783-OTR_0-02-0a-bd5113241fce19930d51e550daf294bd12c05c67334e5bb33e6216d64e24268d_8bb08d0a.jpg",
         "info": "Хазем Махмуд Сами М., Египет, Август 2017, Многопрофильная клиника Превентикум",
         "location": "Диагностическая клиника Превентикум Эссен"
     },
@@ -343,10 +345,7 @@ let caruselClinic4 = [
 ]
 
 
-
-for(let a = 0; a < 3; a++) {
     for(let a = 0; a <imgCarusel1.length; a++) {
-        console.log(a);
         let card_Carusel = document.createElement('div')
         card_Carusel.classList.add('card_Carusel')
         card_Carusel.innerHTML = `
@@ -374,84 +373,90 @@ for(let a = 0; a < 3; a++) {
         let textCenter = document.createElement('div')
         textCenter.classList.add('text-center')
         let linkA = document.createElement('a')
-        linkA.innerText = location
+        linkA.innerText = imgCarusel1[a].location
         textCenter.appendChild(linkA)
         card_Carusel.appendChild(carusel_control)
         card_Carusel.appendChild(textCenter)
-        console.log(card_Carusel);
-        overflow_Block.appendChild(card_Carusel)
+        carusel_Img1.appendChild(card_Carusel)
     }
     
-    let carusel_Img = document.createElement('div')
-    carusel_Img.classList.add('carusel_Img')
-    carusel_Img.appendChild(card_Carusel)
-    overflow_Block.appendChild(caruselImg)
-}
 
+    for(let b = 0; b <imgCarusel2.length; b++) {
+        let card_Carusel1 = document.createElement('div')
+        card_Carusel1.classList.add('card_Carusel')
+        card_Carusel1.innerHTML = `
+        <div class="rtn">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+        `
+        let carusel_control1 = document.createElement('div')
+        carusel_control1.classList.add('carusel_control')
+        let small = document.createElement('small')
+        small.innerText = imgCarusel2[b].nameAndCountry
+        carusel_control1.appendChild(small)
+        let textP = document.createElement('p')
+        let caruselImg = document.createElement('img')
+        caruselImg.setAttribute('src', imgCarusel2[b].img)
+        textP.appendChild(caruselImg)
+        let span = document.createElement('span')
+        span.innerText = imgCarusel2[b].info
+        textP.appendChild(span)
+        carusel_control1.appendChild(textP)
+        let textCenter = document.createElement('div')
+        textCenter.classList.add('text-center')
+        let linkA = document.createElement('a')
+        linkA.innerText = imgCarusel2[b].location
+        textCenter.appendChild(linkA)
+        card_Carusel1.appendChild(carusel_control1)
+        card_Carusel1.appendChild(textCenter)
+        carusel_Img2.appendChild(card_Carusel1)
+        console.log(imgCarusel2);
+    }
+    
 
-    // let carusel_Img = document.createElement('div')
-    // carusel_Img.classList.add('carusel_Img')
-    // carusel_Img.appendChild(card_Carusel)
-    // overflow_Block.appendChild(caruselImg)
-
-
-// for(let j = 0; j < 3; j++) {
-//     let carusel_Img = document.createElement('div')
-//     carusel_Img.classList.add('carusel_Img')
-//     caruselImg.appendChild(card_Carusel)
-//     overflow_Block.appendChild(caruselImg)
-// }
-
-// let link_json = 'http://localhost:3004/carusel_Comment'
-// fetch(link_json)
-// .then(response => response.json())
-// .then(data => getInfo(data))
-
-// let i = 0
-
-
-// function getInfo(data) {
-
-//     for(let a = 0; a < data[0].length; a++) {
-//     console.log(a);
-//     let card_Carusel = document.createElement('div')
-//     card_Carusel.classList.add('card_Carusel')
-//     let carusel_control = document.createElement('div')
-//     carusel_control.classList.add('carusel_control')
-//     let small = document.createElement('small')
-//     small.innerText = nameAndCountry
-//     carusel_control.appendChild(small)
-//     let textP = document.createElement('p')
-//     let caruselImg = document.createElement('img')
-//     caruselImg.setAttribute('src', img)
-//     textP.appendChild(caruselImg)
-//     let span = document.createElement('span')
-//     span.innerText = info
-//     textP.appendChild(span)
-//     carusel_control.appendChild(textP)
-//     let textCenter = document.createElement('div')
-//     textCenter.classList.add('text-center')
-//     let linkA = document.createElement('a')
-//     linkA.innerText = location
-//     textCenter.appendChild(linkA)
-//     card_Carusel.appendChild(carusel_control)
-//     card_Carusel.appendChild(textCenter)
-//     }
-
-//     // for(let z = 0; z < data.length; z++) {
-//     //     console.log(z);
-//     //     let cardNum = document.createElement('div')
-//     //     cardNum.classList.add('carusel_Img')
-        
-//     // }
-// }
-
-
- 
-    // for(let z = 0; z < 4; z++){
-    //     let carusel_Img = document.createElement('div')
-    //     carusel_Img.classList.add('carusel_Img')
-    //     carusel_Img.appendChild(card_Carusel)
-    //     overflow_Block.appendChild(card_Carusel)
-    // }
+    for(let b = 0; b <imgCarusel3.length; b++) {
+        let card_Carusel1 = document.createElement('div')
+        card_Carusel1.classList.add('card_Carusel')
+        card_Carusel1.innerHTML = `
+        <div class="rtn">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+        `
+        let carusel_control1 = document.createElement('div')
+        carusel_control1.classList.add('carusel_control')
+        let small = document.createElement('small')
+        small.innerText = imgCarusel3[b].nameAndCountry
+        carusel_control1.appendChild(small)
+        let textP = document.createElement('p')
+        let caruselImg = document.createElement('img')
+        caruselImg.setAttribute('src', imgCarusel3[b].img)
+        textP.appendChild(caruselImg)
+        let span = document.createElement('span')
+        span.innerText = imgCarusel3[b].info
+        textP.appendChild(span)
+        carusel_control1.appendChild(textP)
+        let textCenter = document.createElement('div')
+        textCenter.classList.add('text-center')
+        let linkA = document.createElement('a')
+        linkA.innerText = imgCarusel3[b].location
+        textCenter.appendChild(linkA)
+        card_Carusel1.appendChild(carusel_control1)
+        card_Carusel1.appendChild(textCenter)
+        carusel_Img3.appendChild(card_Carusel1)
+    }
+    
+    imgBtnRight.addEventListener('click', () => {
+        carusel_Img1.style.transform = 'translateX(-100%)'
+        carusel_Img2.style.transform = 'translateX(-100%)'
+        carusel_Img1.style.transition = '0.7s linear'
+        carusel_Img2.style.transition = '0.7s linear'
+    })
 
