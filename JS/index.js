@@ -171,8 +171,10 @@ function createSliderElement (nameAndCountry, img, info, location) {
 }
 
 function getInfo(data) {
-    console.log(data[0].id)
+    console.log(data[0])
 
+    let sliderInfo =  data.map(item => item)
+    console.log(sliderInfo);
 
 }
 
@@ -185,3 +187,10 @@ function getInfo(data) {
     //     overflow_Block.appendChild(card_Carusel)
     // }
 
+let menu_home = document.querySelector('.menu_home')
+
+menu_home.addEventListener('click', () => {
+    let background_fixed = document.createElement('div')
+    background_fixed.classList.toggle('background_fixed')
+    document.body.appendChild(background_fixed)
+})

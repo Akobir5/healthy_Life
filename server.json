@@ -1,67 +1,77 @@
 {
     "carusel_Comment" : [
         {
-            "nameAndCountry": "Хазем Махмуд Сами М., Египет",
-            "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
-            "info": "Хазем Махмуд Сами М., Египет, Август 2017, Многопрофильная клиника Превентикум",
-            "location": "Диагностическая клиника Превентикум Эссен",
-            "id": 1
-        },
-        {
-            "nameAndCountry": "Маргит Х., Дания",
-            "img": "https://static.bookinghealth.com/uploads/reviews/4894-otr_patient-photo.jpg",
-            "info": "Маргит Х., Дания, Июль 2020, Университетская клиника им. Гёте Франкфурт на Майне, Проф. Доктор мед. Томас Фогль",
-            "location": "Диагностическая клиника Превентикум Эссен",
-            "id": 2
-        },
-        {
-            "nameAndCountry": "Галина Г., Россия",
-            "img": "https://static.bookinghealth.com/uploads/reviews/6846-foto-with-professor_512.jpg",
-            "info": "Галина Г., Россия, Сентябрь 2017, Университетская клиника Бонн, Профессор, Доктор медицины Франк Г. Хольц.",
-            "location": "Университетская клиника Бонн",
-            "id": 3
-        },
-        {
-            "nameAndCountry": "Борис Т., США",
-            "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
-            "info": "Борис Т., США, март 2017, Академическая клиника Швабинг при Университете Людвига Максимиллиана, Профессор, Доктор медицины Роберт Ритцел.",
-            "location": "Клиника Швабинг Мюнхен",
-            "id": 4
-        },
-        {
-            "nameAndCountry": "Ляззат Д., Казахстан",
-            "img": "https://static.bookinghealth.com/uploads/reviews/5742-otr_2020-08-18_15-38-45.jpg",
-            "info": "Ляззат Д., Казахстан, Август 2020, Клиника женского здоровья и ЭКО Jinepol Стамбул, Турция",
-            "location": "Клиника женского здоровья и ЭКО Jinepol Стамбул",
-            "id": 5
-        },
-        {
-            "nameAndCountry": "Фиона К., Ирландия",
-            "img": "https://static.bookinghealth.com/uploads/reviews/2098-otr_Fiona-C.-1.jpg",
-            "info": "Фиона К., Ирландия, Июль 2021, Клиника расширенной биологической медицины Франкфурт на Майне, Доктор мед. Герхард Зибенхюнер",
-            "location": "Клиника расширенной биологической медицины Франкфурт на Майне",
-            "id": 6
-        },
-        {
-            "nameAndCountry": "Маргит Х., Дания",
-            "img": "https://static.bookinghealth.com/uploads/reviews/4894-otr_patient-photo.jpg",
-            "info": "Маргит Х., Дания, Июль 2020, Университетская клиника им. Гёте Франкфурт на Майне, Проф. Доктор мед. Томас Фогль",
-            "location": "Университетская клиника им. Гёте Франкфурт на Майне",
-            "id": 7
-        },
-        {
-            "nameAndCountry": "Ирина А., Эстония",
-            "img": "https://static.bookinghealth.com/uploads/reviews/9137-otr_maria_08-1.jpg",
-            "info": "Ирина А., Эстония, Январь 2021, Клиника ГЕЛИОС Крефельд, Проф. Доктор мед. Михаель Фридрих.",
-            "location": "Клиника ГЕЛИОС Крефельд",
-            "id": 8
-        },
-        {
-            "nameAndCountry": "Ирина К., Беларусь",
-            "img": "https://static.bookinghealth.com/uploads/reviews/9885-512_IMG_6395.jpg",
-            "info": "Ирина К., Беларусь, Август 2017, Университетская клиника Бонн, Профессор, Доктор Фингер.",
-            "location": "Университетская клиника Бонн",
-            "id": 9
+            "card1" : [
+                {
+                    "nameAndCountry": "Хазем Махмуд Сами М., Египет",
+                    "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
+                    "info": "Хазем Махмуд Сами М., Египет, Август 2017, Многопрофильная клиника Превентикум",
+                    "location": "Диагностическая клиника Превентикум Эссен",
+                    "id": 1
+                },
+                {
+                    "nameAndCountry": "Маргит Х., Дания",
+                    "img": "https://static.bookinghealth.com/uploads/reviews/4894-otr_patient-photo.jpg",
+                    "info": "Маргит Х., Дания, Июль 2020, Университетская клиника им. Гёте Франкфурт на Майне, Проф. Доктор мед. Томас Фогль",
+                    "location": "Диагностическая клиника Превентикум Эссен",
+                    "id": 2
+                },
+                {
+                    "nameAndCountry": "Галина Г., Россия",
+                    "img": "https://static.bookinghealth.com/uploads/reviews/6846-foto-with-professor_512.jpg",
+                    "info": "Галина Г., Россия, Сентябрь 2017, Университетская клиника Бонн, Профессор, Доктор медицины Франк Г. Хольц.",
+                    "location": "Университетская клиника Бонн",
+                    "id": 3
+                }
+            ],
+
+            "card2" : [
+                {
+                    "nameAndCountry": "Борис Т., США",
+                    "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
+                    "info": "Борис Т., США, март 2017, Академическая клиника Швабинг при Университете Людвига Максимиллиана, Профессор, Доктор медицины Роберт Ритцел.",
+                    "location": "Клиника Швабинг Мюнхен",
+                    "id": 4
+                },
+                {
+                    "nameAndCountry": "Ляззат Д., Казахстан",
+                    "img": "https://static.bookinghealth.com/uploads/reviews/5742-otr_2020-08-18_15-38-45.jpg",
+                    "info": "Ляззат Д., Казахстан, Август 2020, Клиника женского здоровья и ЭКО Jinepol Стамбул, Турция",
+                    "location": "Клиника женского здоровья и ЭКО Jinepol Стамбул",
+                    "id": 5
+                },
+                {
+                    "nameAndCountry": "Фиона К., Ирландия",
+                    "img": "https://static.bookinghealth.com/uploads/reviews/2098-otr_Fiona-C.-1.jpg",
+                    "info": "Фиона К., Ирландия, Июль 2021, Клиника расширенной биологической медицины Франкфурт на Майне, Доктор мед. Герхард Зибенхюнер",
+                    "location": "Клиника расширенной биологической медицины Франкфурт на Майне",
+                    "id": 6
+                }
+            ],
+
+            "card3" : [
+                {
+                    "nameAndCountry": "Маргит Х., Дания",
+                    "img": "https://static.bookinghealth.com/uploads/reviews/4894-otr_patient-photo.jpg",
+                    "info": "Маргит Х., Дания, Июль 2020, Университетская клиника им. Гёте Франкфурт на Майне, Проф. Доктор мед. Томас Фогль",
+                    "location": "Университетская клиника им. Гёте Франкфурт на Майне",
+                    "id": 7
+                },
+                {
+                    "nameAndCountry": "Ирина А., Эстония",
+                    "img": "https://static.bookinghealth.com/uploads/reviews/9137-otr_maria_08-1.jpg",
+                    "info": "Ирина А., Эстония, Январь 2021, Клиника ГЕЛИОС Крефельд, Проф. Доктор мед. Михаель Фридрих.",
+                    "location": "Клиника ГЕЛИОС Крефельд",
+                    "id": 8
+                },
+                {
+                    "nameAndCountry": "Ирина К., Беларусь",
+                    "img": "https://static.bookinghealth.com/uploads/reviews/9885-512_IMG_6395.jpg",
+                    "info": "Ирина К., Беларусь, Август 2017, Университетская клиника Бонн, Профессор, Доктор Фингер.",
+                    "location": "Университетская клиника Бонн",
+                    "id": 9
+                }
+            ]
         }
     ],
     "carusel_Video" : [
