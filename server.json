@@ -23,9 +23,11 @@
                     "location": "Университетская клиника Бонн",
                     "id": 3
                 }
-            ],
+            ]
+        },
+         {
 
-            "card2" : [
+            "card1" : [
                 {
                     "nameAndCountry": "Борис Т., США",
                     "img": "https://static.bookinghealth.com/uploads/reviews/9172-512_Hazem-Mahmoud-Samy-M.jpg",
@@ -47,9 +49,13 @@
                     "location": "Клиника расширенной биологической медицины Франкфурт на Майне",
                     "id": 6
                 }
-            ],
+            ]
 
-            "card3" : [
+        },
+
+        {
+
+            "card1" : [
                 {
                     "nameAndCountry": "Маргит Х., Дания",
                     "img": "https://static.bookinghealth.com/uploads/reviews/4894-otr_patient-photo.jpg",

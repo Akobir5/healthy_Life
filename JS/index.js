@@ -168,18 +168,23 @@ function createSliderElement (nameAndCountry, img, info, location) {
     textCenter.appendChild(linkA)
     card_Carusel.appendChild(carusel_control)
     card_Carusel.appendChild(textCenter)
+
+
 }
 
 function getInfo(data) {
-    console.log(data[0])
+    console.log(data[0].card1[0])
 
-    let sliderInfo =  data.map(item => item)
-    console.log(sliderInfo);
+    for(let z = 0; z < data.length; z++) {
+        let cardNum = document.createElement('div')
+        cardNum.classList.add('carusel_Img')
 
+        
+    }
 }
 
 
-    
+ 
     // for(let z = 0; z < 4; z++){
     //     let carusel_Img = document.createElement('div')
     //     carusel_Img.classList.add('carusel_Img')
