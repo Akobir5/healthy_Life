@@ -454,8 +454,15 @@ let caruselClinic4 = [
     }
     
     imgBtnRight.addEventListener('click', () => {
-        carusel_Img1.style.transform = 'translateX(-100%)'
-        carusel_Img2.style.transform = 'translateX(-100%)'
+        carusel_Img2.classList.add('carsuleL200')
+        carusel_Img3.classList.add('carsuleL200')
+        carusel_Img2.classList.add('carusel_time')
+        carusel_Img3.classList.add('carusel_time') 
+    })
+    
+    imgBtnLeft.addEventListener('click', () => {
+        carusel_Img1.style.transform = 'translateX(0)'
+        carusel_Img2.style.transform = 'translateX(0)'
         carusel_Img1.style.transition = '0.7s linear'
         carusel_Img2.style.transition = '0.7s linear'
     })
