@@ -5,7 +5,6 @@
     outline: none;
     font-family: Arial, sans-serif;
 }
-
 *::selection {
     background-color: rgb(125, 0, 197);
     color: #fff;
@@ -989,6 +988,17 @@ small::before {
     border: 0;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%);
     padding: 5px 0;
+    z-index: 250;
+}
+
+.menu_background {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 350;
 }
 
 .menu_box_check {
