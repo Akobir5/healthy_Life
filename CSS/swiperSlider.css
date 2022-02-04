@@ -15,3 +15,9 @@ img {
     align-items: center;
     justify-content: space-between;
 }
+
+.boxOfVideo {
+    width: 560px;
+    height: 315px;
+    
+}

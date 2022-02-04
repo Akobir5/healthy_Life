@@ -9,21 +9,13 @@ let text_discription = document.querySelector('.text_discription')
 let carusel_Img1 = document.querySelector('.carusel_Img1')
 let carusel_Img2 = document.querySelector('.carusel_Img2')
 let carusel_Img3 = document.querySelector('.carusel_Img3')
-// IMG Carusel Rtn
-let swiperSlider = document.querySelectorAll('.swiper-slide')
-
-
-let imgBtnRight = document.querySelector('.imgBtnRight')
-let imgBtnLeft = document.querySelector('.imgBtnLeft')
-let overflow_Block = document.querySelector('.overflow_Block')
 
 // IMG Carusel Rtn
-
+let swiperSlider = document.querySelectorAll('.carusel_Box_Control > div > .swiper-wrapper > .swiper-slide')
+// IMG Carusel Rtn
+let videoSwiper = document.querySelector('.video_swiper > .swiper > .swiper-wrapper')
 // VIDEO Carusel Rtn
 
-let videoBtnRight = document.querySelector('.videoBtnRight')
-let videoBtnLeft = document.querySelector('.videoBtnLeft')
-let video_owerflov = document.querySelector('.video_owerflov')
 
 // VIDEO Carusel Rtn
 
@@ -204,6 +196,7 @@ let imgCarusel3 = [
         "location": "Университетская клиника Бонн"
     }
 ]
+
 
 let videoCarusel = [
     {
@@ -463,3 +456,22 @@ let caruselClinic4 = [
         },
       });
     
+      for(let v = 0; v < videoCarusel.length; v++) {
+          let videoSlide = document.createElement('div')
+          videoSlide.classList.add('swiper-slide')
+          let boxOfVideo = document.createElement('div')
+          boxOfVideo.classList.add('boxOfVideo')
+          videoSlide.appendChild(boxOfVideo)
+          let videoImg = document.createElement('img')
+          boxOfVideo.appendChild(videoImg)
+          videoImg.setAttribute('src', videoCarusel[v].img_Video)
+          let iframe = document.createElement('iframe')
+          boxOfVideo.appendChild(iframe)
+          iframe.setAttribute('src', videoCarusel[v].link_Video)
+          iframe.setAttribute('title', 'YouTube video player')
+          iframe.setAttribute('frameborder', '0')
+          videoSwiper.appendChild(videoSlide)
+
+
+          videoImg.style.display = 'none'
+      }
