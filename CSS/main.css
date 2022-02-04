@@ -1144,8 +1144,9 @@ small::before {
 
 
 
-    .overflow_Block {
+    .swiper {
         width: 100%;
+        overflow: visible;
     }
 
     .footer_response {
@@ -1380,19 +1381,25 @@ small::before {
     margin: 20px 0;
 }
 
-.btnControl {
+.swiper-button-prev {
     display: none;
+    opacity: 0;
+}
+
+.swiper-button-next {
+    display: none;
+    opacity: 0;
 }
 
 .carusel_control {
     padding: 10px;
 }
 
-    .carusel_Img {
+    .swiper-slide {
         flex-direction: column;
     }
 
-    .carusel_Img > div {
+    .swiper-slide > div {
         width: 100%;
     }
 
@@ -1601,16 +1608,4 @@ small::before {
     }
 } */
 
-.main_block_overflow {
-    width: 100%;
-    overflow: hidden;
-}
-
-.overflow_Block {
-    width: 300%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
