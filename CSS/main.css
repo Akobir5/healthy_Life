@@ -423,10 +423,6 @@ small::before {
 
 .video_carusel {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 
 .video_owerflov {
@@ -438,11 +434,6 @@ small::before {
 
 .video_owerflov > div {
     width: 100%;
-}
-
-.video_control_new {
-    width: 560px;
-    height: 320px;
 }
 
 .video_carusel .left_ControlBtn {
@@ -1142,11 +1133,11 @@ small::before {
 
 @media (max-width:990px)  {
 
-
-
-    .swiper {
-        width: 100%;
-        overflow: visible;
+    .carusel_Box_Control > .swiper > .swiper-wrapper > div:nth-of-type(2) {
+        display: none;
+    }
+    .carusel_Box_Control > .swiper > .swiper-wrapper > div:nth-of-type(3) {
+        display: none;
     }
 
     .footer_response {
