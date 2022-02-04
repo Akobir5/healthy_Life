@@ -10,6 +10,8 @@ let carusel_Img1 = document.querySelector('.carusel_Img1')
 let carusel_Img2 = document.querySelector('.carusel_Img2')
 let carusel_Img3 = document.querySelector('.carusel_Img3')
 // IMG Carusel Rtn
+let swiperSlider = document.querySelectorAll('.swiper-slide')
+
 
 let imgBtnRight = document.querySelector('.imgBtnRight')
 let imgBtnLeft = document.querySelector('.imgBtnLeft')
@@ -377,7 +379,7 @@ let caruselClinic4 = [
         textCenter.appendChild(linkA)
         card_Carusel.appendChild(carusel_control)
         card_Carusel.appendChild(textCenter)
-        carusel_Img1.appendChild(card_Carusel)
+        swiperSlider[0].appendChild(card_Carusel)
     }
     
 
@@ -413,8 +415,7 @@ let caruselClinic4 = [
         textCenter.appendChild(linkA)
         card_Carusel1.appendChild(carusel_control1)
         card_Carusel1.appendChild(textCenter)
-        carusel_Img2.appendChild(card_Carusel1)
-        console.log(imgCarusel2);
+        swiperSlider[1].appendChild(card_Carusel1)
     }
     
 
@@ -450,20 +451,23 @@ let caruselClinic4 = [
         textCenter.appendChild(linkA)
         card_Carusel1.appendChild(carusel_control1)
         card_Carusel1.appendChild(textCenter)
-        carusel_Img3.appendChild(card_Carusel1)
+        swiperSlider[2].appendChild(card_Carusel1)
     }
-    
-    imgBtnRight.addEventListener('click', () => {
-        carusel_Img2.classList.add('carsuleL200')
-        carusel_Img3.classList.add('carsuleL200')
-        carusel_Img2.classList.add('carusel_time')
-        carusel_Img3.classList.add('carusel_time') 
-    })
-    
-    imgBtnLeft.addEventListener('click', () => {
-        carusel_Img1.style.transform = 'translateX(0)'
-        carusel_Img2.style.transform = 'translateX(0)'
-        carusel_Img1.style.transition = '0.7s linear'
-        carusel_Img2.style.transition = '0.7s linear'
-    })
 
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    

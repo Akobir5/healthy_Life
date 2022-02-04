@@ -355,69 +355,6 @@ small::before {
     position: relative;
 }
 
-.carusel_Img1, .carusel_Img2, .carusel_Img3 {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.carusel_Img1 {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-}
-
-.carusel_Img2 {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-}
-
-.carusel_Img3 {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-}
-
-.carusel_time {
-    transition: 0.7s linear;
-    -webkit-transition: 0.7s linear;
-    -moz-transition: 0.7s linear;
-    -ms-transition: 0.7s linear;
-    -o-transition: 0.7s linear;
-}
-
-.carsuleL200 {
-    transform: translateX(-200%);
-    -webkit-transform: translateX(-200%);
-    -moz-transform: translateX(-200%);
-    -ms-transform: translateX(-200%);
-    -o-transform: translateX(-200%);
-}
-
-.caruselL100 {
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
-}
-
-.caruselL0 {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-}
-
 .card_Carusel {
     width: 33.3333%;
     padding: 0 15px;
@@ -1478,6 +1415,13 @@ small::before {
 
     .search_Hospital {
         margin-top: 10px;
+    }
+
+    .card-body > ul > li {
+        padding: 10px 0;
+    }
+    .card-body > ul { 
+        margin: 15px 0 15px 15px;
     }
 
 }

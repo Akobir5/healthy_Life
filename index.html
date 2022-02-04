@@ -5,9 +5,13 @@
     <link rel="stylesheet" href="./CSS/header.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/swiperSlider.css">
 
+    <!-- swiper js cdn -->
 
-<!-- CSS only -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- CSS only -->
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -18,10 +22,6 @@
     <title>Healthy.Life</title>
 </head>
 <body>
-
-    <h1>hello world</h1>
-
-    <h1>https://us02web.zoom.us/j/81020706224?pwd=VTRQSjcxVIdhQThRNVdWdlc5S3JDQT09</h1>
 
     <header id="header" class="headerMain">
 
@@ -521,26 +521,36 @@
                     <h1 class="popularText">Истории выздоровления</h1>
 
                     <div class="carusel_Box_Control">
-
+<!-- 
                         <button class="imgBtnLeft btnControl left_ControlBtn">
                             <i class="fas fa-chevron-left"></i>
-                        </button>
+                        </button> -->
                         <div class="main_block_overflow">
-                    <div class="overflow_Block">
-
+                    <!-- <div class="overflow_Block">
                   
                             <div class="carusel_Img1 carusel_Img"></div>
                             <div class="carusel_Img2 carusel_Img"></div>
-                            <div class="carusel_Img3 carusel_Img"></div>
+                            <div class="carusel_Img3 carusel_Img"></div> 
                                 
-                        </div>
+                        </div> -->
+
+                            <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
                
 
                         </div>
 
-                        <button class="imgBtnRight btnControl right_ControlBtn">
+                        <!-- <button class="imgBtnRight btnControl right_ControlBtn">
                             <i class="fas fa-chevron-right"></i>
-                        </button>
+                        </button> -->
     
                     </div>
                 </div>
@@ -1147,6 +1157,9 @@
     <!--  MENU -->
 
     <div class="toggleBlock"></div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
     <script src="./JS/index.js"></script>
