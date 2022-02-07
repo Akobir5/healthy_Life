@@ -539,8 +539,8 @@ let caruselClinic1 = [
             }
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".btn_right",
+            prevEl: ".btn_left",
           }
       });
 
