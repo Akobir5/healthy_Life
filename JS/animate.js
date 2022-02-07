@@ -23,4 +23,3 @@ allHeaderItems.forEach(items => {
     })
 })
 
-console.log("hello");

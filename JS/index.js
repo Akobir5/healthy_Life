@@ -12,12 +12,10 @@ let carusel_Img3 = document.querySelector('.carusel_Img3')
 
 // IMG Carusel Rtn
 let swiperSlider = document.querySelectorAll('.carusel_Box_Control > div > .swiper-wrapper > .swiper-slide')
-// IMG Carusel Rtn
+// VIDEO Carusel Rtn
 let videoSwiper = document.querySelector('.video_swiper > .swiper > .swiper-wrapper')
-// VIDEO Carusel Rtn
-
-
-// VIDEO Carusel Rtn
+// HOSPITAL carusel
+let hospitalSwiper = document.querySelector('.hospital_buildings > .swiper > .swiper-wrapper')
 
 
 
@@ -250,95 +248,85 @@ let videoCarusel = [
 let caruselClinic1 = [
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/600045ab0e114.jpg",
-        "name_Building": "Университетская клиника Тюбингена",
-        "id": 1
+        "name_Building": "Университетская клиника Тюбингена"
     },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/600188f5cffb3.jpg",
-        "name_Building": "Университетская клиника Дюссельдорф",
-        "id": 2
+        "name_Building": "Университетская клиника Дюссельдорф"
     },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ff71a94092b7.jpg",
-        "name_Building": "Университетская клиника Ульма",
-        "id": 3
+        "name_Building": "Университетская клиника Ульма"
     },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/60018b988ab2a.jpg",
-        "name_Building": "Университетская клиника им. Гёте Франкфурт на Майне",
-        "id": 4
-    }
-]
-
-let caruselClinic2 = [
+        "name_Building": "Университетская клиника им. Гёте Франкфурт на Майне"
+    },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/600042586ac6f.jpg",
-        "name_Building": "Университетская клиника Гамбург-Эппендорф",
-        "id": 5
+        "name_Building": "Университетская клиника Гамбург-Эппендорф"
     },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/600049903f041.jpg",
-        "name_Building": "Университетская клиника Мюнхенского университета им.",
-        "id": 6
+        "name_Building": "Университетская клиника Мюнхенского университета им."
     },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ff71d3fe387b.jpg",
-        "name_Building": "Университетская клиника Вюрцбурга",
-        "id": 7
+        "name_Building": "Университетская клиника Вюрцбурга"
     },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/60018cf310417.jpg",
-        "name_Building": "Университетская клиника Шарите Берлин",
-        "id": 8
-    }
-]
-
-let caruselClinic3 = [
+        "name_Building": "Университетская клиника Шарите Берлин"
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/600042586ac6f.jpg",
+        "name_Building": "Университетская клиника Гамбург-Эппендорф"
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/600049903f041.jpg",
+        "name_Building": "Университетская клиника Мюнхенского университета им."
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ff71d3fe387b.jpg",
+        "name_Building": "Университетская клиника Вюрцбурга"
+    },
+    {
+        "img_Building": "https://static.bookinghealth.com/uploads/clinics/60018cf310417.jpg",
+        "name_Building": "Университетская клиника Шарите Берлин"
+    },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ff7190c69573.jpg",
-        "name_Building": "Университетская клиника Йена",
-        "id": 9
+        "name_Building": "Университетская клиника Йена"
     },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/600040a7d28a6.jpg",
-        "name_Building": "Высшая медицинская школа Ганновера (MHH)",
-        "id": 10
+        "name_Building": "Высшая медицинская школа Ганновера (MHH)"
     },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/600046ad76a18.jpg",
-        "name_Building": "Университетская клиника Мюнстер",
-        "id": 11
+        "name_Building": "Университетская клиника Мюнстер"
     },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/6005637e586af.jpg",
-        "name_Building": "Университетская клиника Рехтс дер Изар Мюнхен",
-        "id": 12
-    }
-]
-
-let caruselClinic4 = [
+        "name_Building": "Университетская клиника Рехтс дер Изар Мюнхен"
+    },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/60018f85a561b.jpg",
-        "name_Building": "Университетская клиника Гейдельберг",
-        "id": 13
+        "name_Building": "Университетская клиника Гейдельберг"
     },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/6000418484004.jpg",
-        "name_Building": "Университетская клиника Галле (Заале)",
-        "id": 14
+        "name_Building": "Университетская клиника Галле (Заале)"
     },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ff834cf5a337.jpg",
-        "name_Building": "Клиника Гелиос Берлин-Бух",
-        "id": 15
+        "name_Building": "Клиника Гелиос Берлин-Бух"
     },
     {
         "img_Building": "https://static.bookinghealth.com/uploads/clinics/5ffc5d682dca4.jpg",
-        "name_Building": "Клиника Вивантес Каульсдорф Берлин ‹›НАЙТИ КЛИНИКУ",
-        "id": 16
+        "name_Building": "Клиника Вивантес Каульсдорф Берлин ‹›НАЙТИ КЛИНИКУ"
     }
 ]
-
 
     for(let a = 0; a <imgCarusel1.length; a++) {
         let card_Carusel = document.createElement('div')
@@ -447,7 +435,9 @@ let caruselClinic4 = [
         swiperSlider[2].appendChild(card_Carusel1)
     }
 
-    var swiper = new Swiper(".mySwiper", {
+    //swiper first
+
+    let swiper = new Swiper(".nextSwiper", {
         spaceBetween: 30,
         centeredSlides: true,
         navigation: {
@@ -486,3 +476,51 @@ let caruselClinic4 = [
             })
           })
       })
+
+      //hospitalSwiper
+
+      for (let k = 0; k < caruselClinic1.length; k++) {
+        let hospitalSlide = document.createElement('div')
+        hospitalSlide.classList.add('swiper-slide')
+        let hospital_little = document.createElement('div')
+        hospital_little.classList.add('hospital_little')
+        hospitalSlide.appendChild(hospital_little)
+        let imgLink = document.createElement('a')
+        //link
+        imgLink.setAttribute('href', " ")
+        hospital_little.appendChild(imgLink)
+        let img = document.createElement('img')
+        img.setAttribute('src', caruselClinic1[k].img_Building)
+        imgLink.appendChild(img)
+        let title_building = document.createElement('div')
+        title_building.classList.add('title_building')
+        hospital_little.appendChild(title_building)
+        let text = document.createElement('a')
+        // LINK
+        text.setAttribute('href', " ")
+        text.innerHTML = caruselClinic1[k].name_Building
+        title_building.appendChild(text)
+        hospitalSlide.appendChild(hospital_little)
+        hospitalSwiper.appendChild(hospitalSlide)
+
+      }
+
+
+      // Swiper second
+
+      let swiper1 = new Swiper(".newSwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 4,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+

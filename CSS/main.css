@@ -430,44 +430,12 @@ small::before {
     padding: 7px 0 30px;
 }
 
-.hospital_partner button {
-    color: #89B8D0;
-    font-size: 28px;
-}
-
-.hospital_partner button:hover {
-    color: #fff;
-}
-
 .hospital_buildings {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
     margin: 0 20px;
 }
 
-.hospital_main_overflow {
-    width: 100%;
-    overflow: hidden;
-}
-
-.hospital_owerflov {
-    width: 400%;
-    display: flex;
-    align-items: center;
-}
-
-.hospital_owerflov > div {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .hospital_little {
-    width: 25%;
-    padding: 0 15px;    
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
