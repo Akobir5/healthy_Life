@@ -39,4 +39,10 @@ img {
     display: none;
 }
 
+.hospital_buildings .btn_hospital {
+    color: rgb(255, 255, 255);
+}
 
+.hospital_buildings {
+    position: relative;
+}

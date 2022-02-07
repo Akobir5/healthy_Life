@@ -509,18 +509,38 @@ let caruselClinic1 = [
       // Swiper second
 
       let swiper1 = new Swiper(".newSwiper", {
+        // slidesPerView: 4,
+        // spaceBetween: 30,
+        // slidesPerGroup: 4,
+        // loop: true,
+        // loopFillGroupWithBlank: true,
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+
         slidesPerView: 4,
         spaceBetween: 30,
         slidesPerGroup: 4,
         loop: true,
         loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            550: {
+                slidesPerView: 2,
+            },
+            800: {
+                slidesPerView: 3,
+            },
+            1150: {
+                slidesPerView:4,
+            }
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }
       });
 

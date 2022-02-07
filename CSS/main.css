@@ -1326,6 +1326,10 @@ small::before {
         width: 85% !important;
     }
 
+    
+    .hospital_little {
+        width: 90%;
+    }
 
     .footer_information {
         flex-direction: column;
@@ -1451,6 +1455,19 @@ small::before {
         margin-top: 50px;
     }
 
+    
+    .hospital_buildings  > div .btn_hospital {
+        position: absolute !important;
+        
+        top: 500px !important;
+        /* display: none; */
+    }
+
+    .hospital_buildings  > div .swiper-button-prev {
+        left: 0;
+        right: auto;
+        bottom: -50px;
+    }
 }
 
 @media screen and (max-width:545px)  {
@@ -1461,6 +1478,11 @@ small::before {
 
     .hospital_buildings {
         margin: 0;
+    }
+
+    .hospital_little {
+        width: 90%;
+        padding: 0 15px;
     }
 
 }
