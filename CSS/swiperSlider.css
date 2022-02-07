@@ -18,6 +18,23 @@ img {
 
 .boxOfVideo {
     width: 560px;
-    height: 315px;
-    
+    height: 315px; 
+    position: relative;
+}
+
+.video_swiper > div > div > .swiper-slide {
+    justify-content: center;
+}
+
+.boxOfVideo img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.boxOfVideo iframe {
+    width: 100%;
+    height: 100%;
+    display: none;
 }

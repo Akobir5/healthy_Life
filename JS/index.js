@@ -470,8 +470,19 @@ let caruselClinic4 = [
           iframe.setAttribute('src', videoCarusel[v].link_Video)
           iframe.setAttribute('title', 'YouTube video player')
           iframe.setAttribute('frameborder', '0')
+          iframe.setAttribute('autoplay', " ")
           videoSwiper.appendChild(videoSlide)
-
-
-          videoImg.style.display = 'none'
       }
+
+      let checkVideo = document.querySelectorAll('.boxOfVideo img')
+
+      checkVideo.forEach((item, index) => {
+          item.addEventListener('click', () => {
+            checkVideo[index].style.display = 'none'
+
+            let iframeNext = document.querySelectorAll('.boxOfVideo iframe')
+            iframeNext.forEach(autoPlay => {
+                autoPlay.style.display = 'block'
+            })
+          })
+      })
